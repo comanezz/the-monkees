@@ -1,0 +1,40 @@
+/* ---------------------------------------- FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Exo|Halant|Roboto:100,200,300,400,500,600,700,800,900&display=swap');
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------- BUTTONS */
+
+.event-button.btn {  /* Allow me to fit the button in the ul box size*/
+    padding: 0;
+}
+
+/* ---------------------------------------- HEADERS */
+
+
+/* ---------------------------------------- check the borders of the grid */
+/*
+nav {
+    border: 1px solid red;
+}
+
+div {
+    border: 1px solid green;
+}
+
+ul {
+    border: 1px solid yellow;
+}
+
+li {
+    border: 1px dotted blue;
+}
+
+a {
+    border: 1px dotted white;
+}
+*/
