@@ -1,4 +1,4 @@
-# Your Project's Name
+# The Monkees
 
 One or two paragraphs providing an overview of your project.
 
@@ -30,6 +30,7 @@ In this section, you should go over the different parts of your project, and des
 - https://codepen.io/jstn/pen/zuDst Used this link to learn how to how to add an animated underline hover
 - https://jigsaw.w3.org/css-validator/validator Used to check the css syntax
 - https://validator.w3.org/nu/#textarea Used to check the HTML syntax
+- https://fontawesome.com/v4.7.0/ Used this version of font awesome to get icons -
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z

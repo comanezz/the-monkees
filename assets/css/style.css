@@ -6,9 +6,35 @@
     text-transform: uppercase;
 }
 
+h1 {
+    font-family: "Barlow condensed", "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+/* ---------------------------------------- BACKGROUND IMAGE */
+
+body, html {
+  height: 100%;
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("images/background-image-dark.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* ---------------------------------------- BUTTONS */
+
 /* TOP RIGHT OF THE SCRREN*/
+
 .event-button.btn {
     /* Allow me to fit the button in the ul box size*/
     padding: 0;
@@ -44,6 +70,7 @@
 /* ---------------------------------------- FOOTER */
 
 /* To give some space to the social icons in the footer*/
+
 .foot {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -55,16 +82,23 @@
     margin: 15px;
 }
 
+/* ---------------------------------------- ICON FONT AWESOME */
+
+h1>.icon-videos {
+    color: inherit;
+    pointer-events: none;
+}
+
 .fa {
     color: #f4f4f4;
     transition: all .2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out 0.2s;
+    -moz-transition: all 0.2s ease-in-out;
     /* Firefox */
-    -webkit-transition: all 0.2s ease-in-out 0.2s;
+    -webkit-transition: all 0.2s ease-in-out;
     /* Safari & Chrome */
-    -o-transition: all 0.2s ease-in-out 0.2s;
+    -o-transition: all 0.2s ease-in-out;
     /* Opera */
-    -ms-transition: all 0.2s ease-in-out 0.2s;
+    -ms-transition: all 0.2s ease-in-out;
     /* Internet Explorer */
 }
 
@@ -85,6 +119,12 @@
 
 .fa-youtube:hover {
     color: #e31010;
+}
+
+/* SHADOW EFFECTS ICON*/
+
+.social-icon-shadow {
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* ---------------------------------------- check the borders of the grid */
