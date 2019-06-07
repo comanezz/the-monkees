@@ -10,20 +10,14 @@ h1 {
     font-family: "Barlow condensed", "Roboto", sans-serif;
     font-weight: 400;
     font-size: 2.4rem;
+    color: rgba(255, 255, 255, 0.84);
 }
 
 /* ---------------------------------------- BACKGROUND IMAGE */
 
-body, html {
-  height: 100%;
-}
-
 .bg { 
   /* The image used */
-  background-image: url("images/background-image-dark.jpg");
-
-  /* Full height */
-  height: 100%; 
+  background-image: url("../images/monkees.jpg");
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -41,13 +35,11 @@ body, html {
 }
 
 /* ---------------------------------------- HEADERS */
+/* Hover underline added to have a better UX. */
 
 .underline-hover>a {
-    position: relative;
-    /* position changed for the underline position */
+    position: relative; /* position changed for the underline position */
 }
-
-/* Hover added to add a better UX. */
 
 .underline-hover>a:after {
     content: "";
@@ -71,7 +63,11 @@ body, html {
 
 /* To give some space to the social icons in the footer*/
 
-.foot {
+.footer-part {
+    padding: 0;
+}
+
+.row.foot {
     margin-top: 10px;
     margin-bottom: 15px;
 }
@@ -84,10 +80,13 @@ body, html {
 
 /* ---------------------------------------- ICON FONT AWESOME */
 
+/* ICON in the title */
 h1>.icon-videos {
     color: inherit;
     pointer-events: none;
 }
+
+/* ICONS in the footer*/
 
 .fa {
     color: #f4f4f4;
@@ -122,6 +121,8 @@ h1>.icon-videos {
 }
 
 /* SHADOW EFFECTS ICON*/
+
+/* ICON in the footer */
 
 .social-icon-shadow {
     text-shadow: 5px 5px rgba(0, 0, 0, 0.4);
