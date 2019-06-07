@@ -15,7 +15,7 @@ h1 {
 
 /* ---------------------------------------- BACKGROUND IMAGE */
 
-.bg { 
+.bg-image { 
   /* The image used */
   background-image: url("../images/monkees.jpg");
 
@@ -63,16 +63,11 @@ h1 {
 
 /* To give some space to the social icons in the footer*/
 
-.footer-part {
-    padding: 0;
-}
-
 .row.foot {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    padding: 10px 0px 10px 0px;
 }
 
-/* SOCIAL ICON */
+/* SOCIAL ICON space between them*/
 
 .social-icon {
     margin: 15px;
@@ -120,7 +115,7 @@ h1>.icon-videos {
     color: #e31010;
 }
 
-/* SHADOW EFFECTS ICON*/
+/*---------------------- SHADOW EFFECTS ICON*/
 
 /* ICON in the footer */
 
