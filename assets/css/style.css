@@ -13,6 +13,11 @@ h1 {
     color: rgba(255, 255, 255, 0.84);
 }
 
+h3 {
+    font-family: "Barlow condensed", "Roboto", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.84);
+}
 /* ---------------------------------------- BACKGROUND IMAGE */
 
 .bg-image { 
@@ -58,6 +63,23 @@ h1 {
 }
 
 /* ---------------------------------------- SECTION */
+
+/* --- VIDEO PART */
+
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 /* ---------------------------------------- FOOTER */
 
@@ -119,7 +141,7 @@ h1>.icon-videos {
 
 /* ICON in the footer */
 
-.social-icon-shadow {
+.icon-shadow {
     text-shadow: 5px 5px rgba(0, 0, 0, 0.4);
 }
 

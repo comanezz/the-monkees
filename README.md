@@ -25,6 +25,7 @@ In this section, you should go over the different parts of your project, and des
 - JQuery 
 - Popper.js 
 - Google Fonts
+- Visual Studio Code find better to use than AWS Cloud9
 - https://convertico.com/ Used it to convert my image.png to image.ico
 - https://www.color-hex.com/color-palette/22941 Used to find the correct color of the social Icon
 - https://codepen.io/jstn/pen/zuDst Used this link to learn how to how to add an animated underline hover
