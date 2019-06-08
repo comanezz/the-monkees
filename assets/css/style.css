@@ -13,30 +13,42 @@ h1 {
     color: rgba(255, 255, 255, 0.84);
 }
 
-h3 {
+h2 {
     font-family: "Barlow condensed", "Roboto", sans-serif;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.84);
+    color: rgba(255, 255, 255, 1);
 }
+
 /* ---------------------------------------- BACKGROUND IMAGE */
 
-.bg-image { 
+.main-container.bg-image { 
   /* The image used */
   background-image: url("../images/monkees.jpg");
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
-/* ---------------------------------------- BUTTONS */
+.bg-image-dark { 
+    /* The image used */
+    background-image: url("../images/background-image-dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* ---------------------------------------- NAVBAR BUTTONS */
 
 /* TOP RIGHT OF THE SCRREN*/
 
 .event-button.btn {
     /* Allow me to fit the button in the ul box size*/
     padding: 0;
+}
+
+.navbar-toggler {
+    border: 0;
 }
 
 /* ---------------------------------------- HEADERS */
@@ -85,7 +97,7 @@ h3 {
 
 /* To give some space to the social icons in the footer*/
 
-.row.foot {
+footer .foot {
     padding: 10px 0px 10px 0px;
 }
 
@@ -103,7 +115,7 @@ h1>.icon-videos {
     pointer-events: none;
 }
 
-/* ICONS in the footer*/
+/* ICONS */
 
 .fa {
     color: #f4f4f4;
@@ -118,11 +130,14 @@ h1>.icon-videos {
     /* Internet Explorer */
 }
 
+.fa-arrow-circle-o-down {
+    color: rgba(255, 255, 255, 0.84);
+}
+
 /* Hover added to add a better UX.*/
 
 .fa:hover {
     transform: scale(1.3);
-
 }
 
 .fa-facebook-square:hover {
@@ -135,6 +150,10 @@ h1>.icon-videos {
 
 .fa-youtube:hover {
     color: #e31010;
+}
+
+.fa-arrow-circle-o-down:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 /*---------------------- SHADOW EFFECTS ICON*/
