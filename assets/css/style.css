@@ -27,13 +27,30 @@ h1 {
 
 /* ---------------------------------------- BACKGROUND IMAGE AND SIZE*/
 
-.main-container {
-    /* The image used */
+.monkees-bg {
+    background: url("../images/monkees.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: ;
+}
+
+.dark-bg {
     background: url("../images/dark-background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.main-container-home {
+    height: calc(100vh - 58px);
+    margin-top: 58px;
+}
+
+.main-container-video {
+    /* The image used */
     height: calc(100vh - 58px);
     margin-top: 58px;
 }
@@ -80,7 +97,7 @@ h1 {
 
 /* Arrow Button*/
 
-.more-video-content {
+.arrow-container {
     margin-top: 10%;
 }
 
@@ -103,7 +120,7 @@ h1 {
 
 /* Tour Date Title Part */
 
-.tour-date-content {
+.tour-date-container {
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -154,6 +171,7 @@ h1>.icon-videos {
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes scaling {
