@@ -13,37 +13,37 @@ h1 {
     color: rgba(255, 255, 255, 0.84);
 }
 
-h2 {
+.more-video-content {
     font-family: "Barlow condensed", "Roboto", sans-serif;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
 }
 
-/* ---------------------------------------- BACKGROUND IMAGE */
-
-.main-container.bg-image { 
-  /* The image used */
-  background-image: url("../images/monkees.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+.tour-date-content {
+    font-family: "Barlow condensed", "Roboto", sans-serif;
+    font-weight: 400;
+    color: black;
 }
 
-.bg-image-dark { 
+/* ---------------------------------------- BACKGROUND IMAGE AND SIZE*/
+
+.main-container {
     /* The image used */
-    background-image: url("../images/background-image-dark.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../images/dark-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-  }
+    height: calc(100vh - 58px);
+    margin-top: 58px;
+}
 
 /* ---------------------------------------- NAVBAR BUTTONS */
 
 /* TOP RIGHT OF THE SCRREN*/
 
 .event-button.btn {
-    /* Allow me to fit the button in the ul box size*/
+    /* Allowed me to fit the button in the ul box size*/
     padding: 0;
 }
 
@@ -52,10 +52,12 @@ h2 {
 }
 
 /* ---------------------------------------- HEADERS */
+
 /* Hover underline added to have a better UX. */
 
 .underline-hover>a {
-    position: relative; /* position changed for the underline position */
+    position: relative;
+    /* position changed for the underline position */
 }
 
 .underline-hover>a:after {
@@ -76,21 +78,34 @@ h2 {
 
 /* ---------------------------------------- SECTION */
 
+/* Arrow Button*/
+
+.more-video-content {
+    margin-top: 10%;
+}
+
 /* --- VIDEO PART */
 
 .video-responsive {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Tour Date Title Part */
+
+.tour-date-content {
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 /* ---------------------------------------- FOOTER */
@@ -110,6 +125,7 @@ footer .foot {
 /* ---------------------------------------- ICON FONT AWESOME */
 
 /* ICON in the title */
+
 h1>.icon-videos {
     color: inherit;
     pointer-events: none;
@@ -132,6 +148,22 @@ h1>.icon-videos {
 
 .fa-arrow-circle-o-down {
     color: rgba(255, 255, 255, 0.84);
+    font-size: 50px;
+    animation-name: scaling;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes scaling {
+    from {
+        transform: scale(1.0)
+    }
+    to {
+        transform: scale(1.3);
+        color: rgba(255, 255, 255, 1);
+    }
 }
 
 /* Hover added to add a better UX.*/
@@ -150,10 +182,6 @@ h1>.icon-videos {
 
 .fa-youtube:hover {
     color: #e31010;
-}
-
-.fa-arrow-circle-o-down:hover {
-    color: rgba(255, 255, 255, 1);
 }
 
 /*---------------------- SHADOW EFFECTS ICON*/
