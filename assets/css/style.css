@@ -50,8 +50,6 @@ h1 {
 }
 
 .main-container-video {
-    /* The image used */
-    height: calc(100vh - 58px);
     margin-top: 58px;
 }
 
@@ -95,10 +93,15 @@ h1 {
 
 /* ---------------------------------------- SECTION */
 
-/* Arrow Button*/
+.title-content {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+/* Arrow Button space*/
 
 .arrow-container {
-    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 15%;
 }
 
 /* --- VIDEO PART */
@@ -108,6 +111,7 @@ h1 {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    margin-bottom: 48px;
 }
 
 .video-responsive iframe {
@@ -121,8 +125,8 @@ h1 {
 /* Tour Date Title Part */
 
 .tour-date-container {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 /* ---------------------------------------- FOOTER */
@@ -208,6 +212,26 @@ h1>.icon-videos {
 
 .icon-shadow {
     text-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------------------------------------- MEDIA QUERIES */
+
+/* Desktop and Full Screen */
+@media screen and (min-width: 992px) {
+/* Reducing the size of the youtube video */
+    .video-responsive {
+        padding-bottom: 35%;
+    }
+/* Reducing the gap between the video and the arrow button easier to find */
+    .arrow-container {
+        padding-top: 0;
+        padding-bottom: 2%;
+    }
+
+    .tour-date-container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 }
 
 /* ---------------------------------------- check the borders of the grid */
