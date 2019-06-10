@@ -1,4 +1,4 @@
-/* ---------------------------------------- FONTS*/
+/* ---------------------------------------- FONTS */
 
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Exo|Halant|Roboto:100,200,300,400,500,600,700,800,900&display=swap');
 
@@ -6,26 +6,28 @@
     text-transform: uppercase;
 }
 
-h1 {
+section {
     font-family: "Barlow condensed", "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 2.4rem;
-    color: rgba(255, 255, 255, 0.84);
-}
-
-.more-video-content {
-    font-family: "Barlow condensed", "Roboto", sans-serif;
-    font-weight: 400;
     color: rgba(255, 255, 255, 1);
 }
 
-.tour-date-content {
-    font-family: "Barlow condensed", "Roboto", sans-serif;
-    font-weight: 400;
-    color: black;
+h1, h3, h2 {
+    letter-spacing: 6px;
 }
 
-/* ---------------------------------------- BACKGROUND IMAGE AND SIZE*/
+.main-container-video {
+    
+}
+
+.second-container-video {
+     
+}
+
+.third-container-video {
+    
+}
+
+/* ---------------------------------------- BACKGROUND IMAGE / COLOR AND SIZE*/
 
 .monkees-bg {
     background: url("../images/monkees.jpg") no-repeat center center fixed;
@@ -44,26 +46,35 @@ h1 {
     background-size: cover;
 }
 
-.main-container-home {
+.white-bg {
+    background-color: #f4f4f4;
+}
+
+/* .main-container-home {
     height: calc(100vh - 58px);
     margin-top: 58px;
-}
+} */
 
 .main-container-video {
     margin-top: 58px;
 }
 
-/* ---------------------------------------- NAVBAR BUTTONS */
+/* ---------------------------------------- BUTTONS */
 
-/* TOP RIGHT OF THE SCRREN*/
+/* NAVBAR BUTTONS */
 
 .event-button.btn {
     /* Allowed me to fit the button in the ul box size*/
     padding: 0;
 }
-
 .navbar-toggler {
     border: 0;
+}
+
+/* BUTTONS CONTAINER */
+
+.button-container .btn{
+    border-color: #b6c3c5;
 }
 
 /* ---------------------------------------- HEADERS */
@@ -71,8 +82,7 @@ h1 {
 /* Hover underline added to have a better UX. */
 
 .underline-hover>a {
-    position: relative;
-    /* position changed for the underline position */
+    position: relative; /* position changed for the underline position */
 }
 
 .underline-hover>a:after {
@@ -93,15 +103,23 @@ h1 {
 
 /* ---------------------------------------- SECTION */
 
-.title-content {
+/* Top and Bottom Space Title */
+.main-container-video .title-content {
     padding-top: 38px;
     padding-bottom: 38px;
 }
-/* Arrow Button space*/
 
-.arrow-container {
-    padding-top: 10%;
-    padding-bottom: 15%;
+.title-content {
+    padding-top: 60px;
+}
+
+/*  Block Divider Line */
+
+.block-divider {
+    height: 5px;
+    background-color: #f4f4f4;
+    width: 35px;
+    border: 0;
 }
 
 /* --- VIDEO PART */
@@ -111,7 +129,7 @@ h1 {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    margin-bottom: 48px;
+    margin-bottom: 7%;
 }
 
 .video-responsive iframe {
@@ -122,11 +140,10 @@ h1 {
     position: absolute;
 }
 
-/* Tour Date Title Part */
+/* Button Container */
 
-.tour-date-container {
-    padding-top: 5%;
-    padding-bottom: 5%;
+.button-container {
+    padding-top: 1%;
 }
 
 /* ---------------------------------------- FOOTER */
@@ -145,11 +162,13 @@ footer .foot {
 
 /* ---------------------------------------- ICON FONT AWESOME */
 
-/* ICON in the title */
+/* ICON in the title remove pointer cause of fa hover */
 
-h1>.icon-videos {
+h1>.icon-video {
     color: inherit;
     pointer-events: none;
+    /* Give some space between the icon and the title */
+    margin-right: 5px;
 }
 
 /* ICONS */
@@ -165,27 +184,6 @@ h1>.icon-videos {
     /* Opera */
     -ms-transition: all 0.2s ease-in-out;
     /* Internet Explorer */
-}
-
-.fa-arrow-circle-o-down {
-    color: rgba(255, 255, 255, 0.84);
-    font-size: 50px;
-    animation-name: scaling;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes scaling {
-    from {
-        transform: scale(1.0)
-    }
-    to {
-        transform: scale(1.3);
-        color: rgba(255, 255, 255, 1);
-    }
 }
 
 /* Hover added to add a better UX.*/
@@ -222,15 +220,12 @@ h1>.icon-videos {
     .video-responsive {
         padding-bottom: 35%;
     }
-/* Reducing the gap between the video and the arrow button easier to find */
-    .arrow-container {
-        padding-top: 0;
-        padding-bottom: 2%;
-    }
+}
 
-    .tour-date-container {
-        padding-top: 5%;
-        padding-bottom: 5%;
+/* Removing the arrow button on landscape screen and tablet */
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .arrow-container {
+        display: none;
     }
 }
 
