@@ -11,7 +11,7 @@ section {
     color: rgba(255, 255, 255, 1);
 }
 
-h1, h3, h2 {
+h1, h3, h2, {
     letter-spacing: 6px;
 }
 
@@ -36,6 +36,7 @@ h1, h3, h2 {
     -o-background-size: cover;
     background-size: cover;
     background-position: ;
+    height: 100vh;
 }
 
 .dark-bg {
@@ -46,14 +47,11 @@ h1, h3, h2 {
     background-size: cover;
 }
 
-.white-bg {
-    background-color: #f4f4f4;
+.main-container-home {
+    /* height: calc(100vh - 58px);
+    height: 50vh; */
+    /* margin-top: 58px; */
 }
-
-/* .main-container-home {
-    height: calc(100vh - 58px);
-    margin-top: 58px;
-} */
 
 .main-container-video {
     margin-top: 58px;
@@ -74,7 +72,12 @@ h1, h3, h2 {
 /* BUTTONS CONTAINER */
 
 .button-container .btn{
-    border-color: #b6c3c5;
+    /* border-color: #b6c3c5; */
+    color: rgba(255,255,255,.75);
+}
+
+.button-container .btn:hover {
+    color: rgba(255,255,255, 1);
 }
 
 /* ---------------------------------------- HEADERS */
@@ -219,13 +222,6 @@ h1>.icon-video {
 /* Reducing the size of the youtube video */
     .video-responsive {
         padding-bottom: 35%;
-    }
-}
-
-/* Removing the arrow button on landscape screen and tablet */
-@media screen and (min-width: 768px) and (orientation: landscape) {
-    .arrow-container {
-        display: none;
     }
 }
 
