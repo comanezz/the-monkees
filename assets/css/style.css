@@ -11,32 +11,36 @@ section {
     color: rgba(255, 255, 255, 1);
 }
 
-h1, h3, h2, {
+.home-page {
+    color: black;
+}
+
+.video-page {
+    
+}
+
+audio.page {
+
+}
+
+h1, h2, h3 {
     letter-spacing: 6px;
-}
-
-.main-container-video {
-    
-}
-
-.second-container-video {
-     
-}
-
-.third-container-video {
-    
 }
 
 /* ---------------------------------------- BACKGROUND IMAGE / COLOR AND SIZE*/
 
 .monkees-bg {
-    background: url("../images/monkees.jpg") no-repeat fixed;
+    background: url("../images/monkees-together.gif");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: ;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .dark-bg {
@@ -107,12 +111,12 @@ h1, h3, h2, {
 /* ---------------------------------------- SECTION */
 
 /* Top and Bottom Space Title */
-.main-container-video .title-content {
+.title-content {
     padding-top: 38px;
     padding-bottom: 38px;
 }
 
-.title-content {
+.second-container-video .title-content, .third-container-video .title-content {
     padding-top: 60px;
 }
 
@@ -167,7 +171,7 @@ footer .foot {
 
 /* ICON in the title remove pointer cause of fa hover */
 
-h1>.icon-video {
+h1>.icon-title {
     color: inherit;
     pointer-events: none;
     /* Give some space between the icon and the title */
