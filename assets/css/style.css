@@ -30,7 +30,7 @@ h1, h3, h2, {
 /* ---------------------------------------- BACKGROUND IMAGE / COLOR AND SIZE*/
 
 .monkees-bg {
-    background: url("../images/monkees.jpg") no-repeat center center fixed;
+    background: url("../images/monkees.jpg") no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
