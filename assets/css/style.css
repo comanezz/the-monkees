@@ -69,14 +69,14 @@ h1, h2, h3 {
     border: 0;
 }
 
-/* BUTTONS CONTAINER */
+/*  Font Color Buttons */
 
-.button-container .btn{
+.btn-font {
     /* border-color: #b6c3c5; */
     color: rgba(255,255,255,.75);
 }
 
-.button-container .btn:hover {
+.btn-font:hover {
     color: rgba(255,255,255, 1);
 }
 
@@ -125,7 +125,7 @@ h1, h2, h3 {
     border: 0;
 }
 /* ---------------------  VIDEO PAGE */
-/* --- VIDEO PART */
+/* ---- VIDEO PART */
 
 .video-responsive {
     overflow: hidden;
@@ -149,32 +149,47 @@ h1, h2, h3 {
     padding-top: 1%;
 }
 
-/* --------------------- AUDIO PAGE */
-/*  Audio Player Size */
-.music-player {
-    width: 90%
+/* --------------------- Music PAGE */
+/* Music Title Space */
+
+.music-content h4 {
+    margin-top: 15px;
 }
 
-.last-col-audio {
+/* ---- Audio Player */
+/* Size and Space */
+.music-player {
+    width: 90%;
+    margin-top: 15px;
+}
+
+.last-col-music {
     margin-bottom: 38px;
 }
 
-/* Img space and Size*/
+/* ---- Img Cover */
+/* The Three Last img */
 .cover-space {
     padding-top: 38px;
 }
 
+/* All the img */
 .img-size {
     height: 270px;
     width: 85%;
 }
 
+/* ---- Buttons */
+/* Space between content */
+
+.music-content .btn{
+    margin-top: 15px;
+}
+
 /* ---------------------------------------- FOOTER */
 
-/* To give some space to the social icons in the footer*/
-
-footer .foot {
-    padding: 10px 0px 10px 0px;
+footer {
+    height: 58px;
 }
 
 /* SOCIAL ICON space between them*/
@@ -246,7 +261,7 @@ h1>.icon-title {
     }
 
     .img-space {
-        padding-top: 30px;
+        margin-top: 30px; /* The Two last img need top space */
     }
 
     .img-size {
@@ -266,7 +281,8 @@ h1>.icon-title {
 
 /* Desktop and Full Screen */
 @media screen and (min-width: 992px) {
-/* Reducing the size of the youtube video */
+    /* Video Page */
+    /* Reducing the size of the youtube video */
     .video-responsive {
         padding-bottom: 35%;
     }
