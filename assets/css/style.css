@@ -15,12 +15,8 @@ section {
     color: black;
 }
 
-.video-page {
-    
-}
-
-audio.page {
-
+h1 {
+    font-weight: 700;
 }
 
 h1, h2, h3 {
@@ -169,7 +165,7 @@ h1, h2, h3 {
 }
 
 .img-size {
-    height: 270px%;
+    height: 270px;
     width: 85%;
 }
 
