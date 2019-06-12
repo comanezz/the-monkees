@@ -19,8 +19,12 @@ h1 {
     font-weight: 700;
 }
 
-h1, h2, h3 {
+h1, h2, h3, {
     letter-spacing: 6px;
+}
+
+h4 {
+    letter-spacing: 3px;
 }
 
 /* ---------------------------------------- BACKGROUND IMAGE / COLOR AND SIZE*/
@@ -53,7 +57,7 @@ h1, h2, h3 {
     /* margin-top: 58px; */
 }
 
-.main-container-audio, .main-container-video {
+.main-container-music, .main-container-video {
     margin-top: 58px;
 }
 
@@ -69,11 +73,12 @@ h1, h2, h3 {
     border: 0;
 }
 
-/*  Font Color Buttons */
+/*  Music Page Buttons */
 
 .btn-font {
     /* border-color: #b6c3c5; */
     color: rgba(255,255,255,.75);
+    letter-spacing: 2px;
 }
 
 .btn-font:hover {
@@ -150,10 +155,11 @@ h1, h2, h3 {
 }
 
 /* --------------------- Music PAGE */
-/* Music Title Space */
+/* Music Image Title Space */
 
 .music-content h4 {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* ---- Audio Player */
@@ -161,10 +167,6 @@ h1, h2, h3 {
 .music-player {
     width: 90%;
     margin-top: 15px;
-}
-
-.last-col-music {
-    margin-bottom: 38px;
 }
 
 /* ---- Img Cover */
@@ -184,6 +186,13 @@ h1, h2, h3 {
 
 .music-content .btn{
     margin-top: 15px;
+}
+
+/*---- Spotify Playlist */
+/* Space between content */
+
+.spotify-playlist {
+    margin-top: 38px;
 }
 
 /* ---------------------------------------- FOOTER */
@@ -209,7 +218,29 @@ h1>.icon-title {
     margin-right: 5px;
 }
 
-/* ICONS */
+/* Icon in the audio page album image */
+
+.fa-long-arrow-right {
+    pointer-events: none;
+    margin-left: 15px;
+    position: relative;
+    animation-name: scaling-arrow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes scaling-arrow {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 50px;
+    }
+} */
+
+/*------ ICONS Footer */
 
 .fa {
     color: #f4f4f4;
