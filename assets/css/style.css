@@ -24,6 +24,7 @@ h1, h2, h3, {
 }
 
 h4 {
+    font-size: 1.2rem;
     letter-spacing: 3px;
 }
 
@@ -76,9 +77,9 @@ h4 {
 /*  Music Page Buttons */
 
 .btn-font {
-    /* border-color: #b6c3c5; */
     color: rgba(255,255,255,.75);
     letter-spacing: 2px;
+    border-radius: 25px;
 }
 
 .btn-font:hover {
@@ -155,6 +156,13 @@ h4 {
 }
 
 /* --------------------- Music PAGE */
+
+/* Column Audio Space */
+
+.col-audio {
+    margin-bottom: 50px;
+}
+
 /* Music Image Title Space */
 
 .music-content h4 {
@@ -167,12 +175,6 @@ h4 {
 .music-player {
     width: 90%;
     margin-top: 15px;
-}
-
-/* ---- Img Cover */
-/* The Three Last img */
-.cover-space {
-    padding-top: 38px;
 }
 
 /* All the img */
@@ -189,10 +191,10 @@ h4 {
 }
 
 /*---- Spotify Playlist */
-/* Space between content */
+/* Size */
 
 .spotify-playlist {
-    margin-top: 38px;
+    height: 100%;
 }
 
 /* ---------------------------------------- FOOTER */
@@ -223,22 +225,7 @@ h1>.icon-title {
 .fa-long-arrow-right {
     pointer-events: none;
     margin-left: 15px;
-    position: relative;
-    animation-name: scaling-arrow;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
 }
-
-/* @keyframes scaling-arrow {
-    from {
-        width: 0px;
-    }
-
-    to {
-        width: 50px;
-    }
-} */
 
 /*------ ICONS Footer */
 
@@ -287,26 +274,26 @@ h1>.icon-title {
 
 @media screen and (min-width: 768px) {
     /* Audio Page */
-    .cover-space {
+    /* .cover-space {
         padding-top: 0;
     }
 
     .img-space {
         margin-top: 30px; /* The Two last img need top space */
-    }
+    } */
 
     .img-size {
         height: 263px;
     }
 
-    .flex-wrapper { 
+    /* .flex-wrapper { 
         /* https://stackoverflow.com/questions/4575826/how-to-push-a-footer-to-the-bottom-of-page-when-content-is-short-or-missing */
         /* Helped me to push the footer ot the bottom page when there is not enough content */
         display: flex;
         min-height: 100vh;
         flex-direction: column;
         justify-content: space-between
-      }
+      } */
 
 }
 
