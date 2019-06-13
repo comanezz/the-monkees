@@ -48,7 +48,8 @@ h4 {
 }
 
 .dark-bg {
-    background: url("../images/dark-background.jpg") no-repeat center center fixed;
+    /* Found how to darker the bg-img through this link https://stackoverflow.com/questions/26621513/darken-css-background-image */
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/dark-background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
