@@ -53,6 +53,7 @@ h4 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 }
 
 .main-container-home {
@@ -61,7 +62,7 @@ h4 {
     /* margin-top: 58px; */
 }
 
-.main-container-music, .main-container-video {
+.main-container {
     margin-top: 58px;
 }
 
@@ -69,20 +70,15 @@ h4 {
 
 /* NAVBAR BUTTONS */
 
-.event-button.btn {
-    /* Allowed me to fit the button in the ul box size*/
-    padding: 0;
-}
 .navbar-toggler {
     border: 0;
 }
 
-/*  Music Page Buttons */
+/*  Page Buttons */
 
 .btn-font {
     color: rgba(255,255,255,.75);
     letter-spacing: 2px;
-    border-radius: 25px;
 }
 
 .btn-font:hover {
@@ -115,14 +111,10 @@ h4 {
 
 /* ---------------------------------------- SECTION */
 
-/* Top and Bottom Space Title */
-.title-content {
+/* Top and Bottom Space Title All Page */
+.main-title {
     padding-top: 38px;
     padding-bottom: 38px;
-}
-
-.second-container-video .title-content, .third-container-video .title-content {
-    padding-top: 60px;
 }
 
 /*  Block Divider Line */
@@ -134,6 +126,7 @@ h4 {
     border: 0;
 }
 /* ---------------------  VIDEO PAGE */
+
 /* ---- VIDEO PART */
 
 .video-responsive {
@@ -141,7 +134,8 @@ h4 {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    margin-bottom: 7%;
+    /* margin-bottom: 7%; */
+    margin-top: 15px;
 }
 
 .video-responsive iframe {
@@ -152,10 +146,14 @@ h4 {
     position: absolute;
 }
 
-/* Button Container in the video page*/
-
-.button-container {
-    padding-top: 1%;
+/* Button space in the column in the video page*/
+/* Need space at the bottom */
+.button-column {
+    margin-bottom: 38px;
+}
+/* Need little bit space on the top */
+.first-video-container .button-column {
+    padding-top: .5rem;
 }
 
 /* --------------------- Music PAGE */
@@ -187,10 +185,11 @@ h4 {
 }
 
 /* ---- Buttons */
-/* Space between content */
+/* Space between content and Style */
 
 .music-content .btn{
     margin-top: 15px;
+    border-radius: 25px;
 }
 
 /*---- Spotify Playlist */
@@ -283,9 +282,13 @@ h1>.icon-title {
 
 /* ---------------------------------------- MEDIA QUERIES */
 
-/* Tablets and Up */
-
 @media screen and (min-width: 768px) {
+    /* Video Page */
+    /* Need little bit space on the top */
+    .second-video-container .button-column, .third-video-container .button-column {
+        padding-top: .5rem;
+    }
+
     /* Audio Page */
 
     .img-size {
