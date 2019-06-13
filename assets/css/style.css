@@ -5,7 +5,10 @@
 .text-uppercase {
     text-transform: uppercase;
 }
+.white-font {
+    color: rgba(255, 255, 255, 1);
 
+}
 section {
     font-family: "Barlow condensed", "Roboto", sans-serif;
     color: rgba(255, 255, 255, 1);
@@ -197,6 +200,16 @@ h4 {
     height: 100%;
 }
 
+/*---- Modals */
+/* Remove the visible border */
+
+.no-top-border {
+    border-top: 0;
+}
+
+.no-bottom-border {
+    border-bottom: 0;
+}
 /* ---------------------------------------- FOOTER */
 
 footer {
@@ -274,26 +287,10 @@ h1>.icon-title {
 
 @media screen and (min-width: 768px) {
     /* Audio Page */
-    /* .cover-space {
-        padding-top: 0;
-    }
-
-    .img-space {
-        margin-top: 30px; /* The Two last img need top space */
-    } */
 
     .img-size {
         height: 263px;
     }
-
-    /* .flex-wrapper { 
-        /* https://stackoverflow.com/questions/4575826/how-to-push-a-footer-to-the-bottom-of-page-when-content-is-short-or-missing */
-        /* Helped me to push the footer ot the bottom page when there is not enough content */
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        justify-content: space-between
-      } */
 
 }
 
