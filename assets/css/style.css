@@ -67,6 +67,11 @@ h4 {
     margin-top: 58px;
 }
 
+.main-container-video {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /* ---------------------------------------- BUTTONS */
 
 /* NAVBAR BUTTONS */
