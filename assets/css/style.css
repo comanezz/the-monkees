@@ -14,7 +14,7 @@ section {
     color: rgba(255, 255, 255, 1);
 }
 
-.home-page {
+.main-container-home {
     color: black;
 }
 
@@ -58,18 +58,12 @@ h4 {
 }
 
 .main-container-home {
-    /* height: calc(100vh - 58px);
-    height: 50vh; */
-    /* margin-top: 58px; */
+    height: calc(100vh - 116px);
+    margin-top: 58px;
 }
 
 .main-container {
     margin-top: 58px;
-}
-
-.main-container-video {
-    padding-right: 0;
-    padding-left: 0;
 }
 
 /* ---------------------------------------- BUTTONS */
@@ -140,7 +134,7 @@ h4 {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    /* margin-bottom: 7%; */
+    margin-bottom: 15px;
     margin-top: 15px;
 }
 
@@ -156,8 +150,9 @@ h4 {
 /* Need space at the bottom */
 .button-column {
     margin-bottom: 38px;
+    border-radius: 5px;
 }
-/* Need little bit space on the top */
+/* Need little bit space on the top of the message */
 .first-video-container .button-column {
     padding-top: .5rem;
 }
@@ -183,11 +178,13 @@ h4 {
     width: 90%;
     margin-top: 15px;
 }
-
+/* Images */
 /* All the img */
-.img-size {
+.img-cover {
     height: 270px;
     width: 85%;
+    /* Images was too bright */
+    opacity: .93;
 }
 
 /* ---- Buttons */
@@ -297,9 +294,6 @@ h1>.icon-title {
 
     /* Audio Page */
 
-    .img-size {
-        height: 263px;
-    }
 
 }
 
