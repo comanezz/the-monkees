@@ -228,7 +228,7 @@ footer {
 
 /* ICON in the title remove pointer cause of fa hover */
 
-h1>.icon-title {
+.icon-title {
     color: inherit;
     pointer-events: none;
     /* Give some space between the icon and the title */
