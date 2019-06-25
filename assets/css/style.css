@@ -28,7 +28,11 @@ h1, h2, h3 {
 
 h4 {
     font-size: 1.2rem;
-    letter-spacing: 3px;
+    letter-spacing: 2.6px;
+}
+
+.timeline-item h4 { /* Tour page */
+    font-weight: 900; 
 }
 
 /* ---------------------------------------- BACKGROUND IMAGE / COLOR AND SIZE*/
@@ -78,7 +82,6 @@ h4 {
 
 .btn-font {
     color: rgba(255,255,255,.75);
-    letter-spacing: 2px;
 }
 
 .btn-font:hover {
@@ -212,6 +215,44 @@ h4 {
 .no-bottom-border {
     border-bottom: 0;
 }
+
+/* --------------------- Tour PAGE */
+
+.date-content {
+    margin-bottom: 30px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position:absolute;
+    left: 2em;
+    top: 2em;
+    display: block;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    left: -6px;
+    border-radius: 12px;
+    position: absolute;
+    background-color: white;
+}
+
 /* ---------------------------------------- FOOTER */
 
 footer {
@@ -292,8 +333,11 @@ footer {
         padding-top: .5rem;
     }
 
-    /* Audio Page */
-
+    /* Tour Page */
+    .timeline-item h4 {
+    margin: 0;
+    padding: 0;
+}
 
 }
 
@@ -308,28 +352,31 @@ footer {
 
 /* ---------------------------------------- check the borders of the grid */
 
-/* 
-nav {
-    border: 1px solid red;
-}
+ 
+/*nav {*/
+/*    border: 1px solid red;*/
+/*}*/
 
-div {
-    border: 1px solid green;
-}
+/*div {*/
+/*    border: 1px solid green;*/
+/*}*/
 
-ul {
-    border: 1px solid yellow;
-}
+/*ul {*/
+/*    border: 1px solid yellow;*/
+/*}*/
 
-li {
-    border: 1px dotted blue;
-}
+/*li {*/
+/*    border: 1px dotted blue;*/
+/*}*/
 
-a {
-    border: 1px dotted white;
-}
+/*a {*/
+/*    border: 1px dotted white;*/
+/*}*/
 
-i {
-    border: 1px solid black;
-} */
+/*i {*/
+/*    border: 1px solid black;*/
+/*} */
 
+/*.timeline-item {*/
+/*    border: 1px solid red;*/
+/*}*/
