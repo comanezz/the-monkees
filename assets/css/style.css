@@ -344,12 +344,6 @@ footer {
         padding-top: .5rem;
     }
 
-    /* Tour Page */
-    .main-container-tour {
-    height: calc(100vh - 116px);
-    margin-top: 58px;
-}
-
     .timeline-item h4 {
     margin: 0;
     padding: 0;
@@ -364,6 +358,12 @@ footer {
     .video-responsive {
         padding-bottom: 35%;
     }
+    
+    /* Tour Page */
+    .main-container-tour {
+    height: calc(100vh - 116px);
+    margin-top: 58px;
+}
 }
 
 /* ---------------------------------------- check the borders of the grid */
