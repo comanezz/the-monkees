@@ -66,6 +66,7 @@ h4 {
     margin-top: 58px;
 }
 
+
 .main-container {
     margin-top: 58px;
 }
@@ -229,7 +230,6 @@ h4 {
     border-left: 1px solid;
 }
 
-
 .timeline-item:before {
     content: attr(data-dates);
     position:absolute;
@@ -239,6 +239,7 @@ h4 {
     font-weight: 500;
     padding: 0;
     margin: 0;
+    background: red;
 }
 
 .timeline-item:after {
@@ -251,6 +252,15 @@ h4 {
     border-radius: 12px;
     position: absolute;
     background-color: white;
+}
+
+.border-left-white {
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.margin-top {
+    margin-top: 36px;
 }
 
 /* ---------------------------------------- FOOTER */
@@ -326,6 +336,7 @@ footer {
 
 /* ---------------------------------------- MEDIA QUERIES */
 
+/* Tablet */
 @media screen and (min-width: 768px) {
     /* Video Page */
     /* Need little bit space on the top */
@@ -334,6 +345,11 @@ footer {
     }
 
     /* Tour Page */
+    .main-container-tour {
+    height: calc(100vh - 116px);
+    margin-top: 58px;
+}
+
     .timeline-item h4 {
     margin: 0;
     padding: 0;
