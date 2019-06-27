@@ -52,7 +52,7 @@
 
     <!-- SECTION -->
     <section>
-        <div class="container-fluid main-container dark-bg">
+        <div class="container-fluid main-container-home dark-bg">
             <div class="row text-center main-title">
                 <div class="col-12">
                     <h1 class="text-uppercase"><i class="fa fa-calendar icon-title"></i>Book An Event</h1>
@@ -75,7 +75,7 @@
                         <form>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Type of Event</label>
@@ -87,17 +87,7 @@
                             </select>
                             </div>
                             <div class="form-row justify-content-between">
-                                <div class="form-group col-6 col-lg-3">
-                                    <label for="exampleFormControlSelect2">Hours</label>
-                                    <select class="form-control" id="exampleFormControlSelect2">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                                </div>
-                                <div class="form-group col-6 col-lg-3">
+                                <div class="form-group col-4">
                                     <label for="exampleFormControlSelect3">Day</label>
                                     <select class="form-control" id="exampleFormControlSelect3">
                                 <option>1</option>
@@ -133,7 +123,7 @@
                                 <option>31</option>
                             </select>
                                 </div>
-                                <div class="form-group col-6 col-lg-3">
+                                <div class="form-group col-4">
                                     <label for="exampleFormControlSelect4">Month</label>
                                     <select class="form-control" id="exampleFormControlSelect4">
                                 <option>January</option>
@@ -150,7 +140,7 @@
                                 <option>December</option>
                             </select>
                                 </div>
-                                <div class="form-group col-6 col-lg-3">
+                                <div class="form-group col-4">
                                     <label for="exampleFormControlSelect5">Year</label>
                                     <select class="form-control" id="exampleFormControlSelect5">
                                 <option>2019</option>
@@ -162,13 +152,15 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
+                                    <input type="text" class="form-control" id="inputCity" required minlength="3">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
+                                    <select id="inputState" class="form-control" required>
+                                    <option selected value="">Choose...</option>
+                                    <option>Florida</option>
+                                    <option>Texas</option>
+                                    <option>California</option>
                                     </select>
                                 </div>
                             </div>
@@ -179,6 +171,7 @@
                             <div class="row justify-content-center">
                                 <button type="submit" class="btn btn-info btn-lg btn-font">Send</button>
                             </div>
+                            <p class="text-center">*This functionality is not working yet</p>
                         </form>
                     </div>
                 </div>
