@@ -86,8 +86,8 @@ form p {
 
 /* ---------------------------------------- HEADERS */
 
-nav .current {
-    background: red;
+.navbar-dark .navbar-nav .nav-link.current {
+    color: rgba(255,255,255, 1);
 }
 
 /* Hover underline added to have a better UX. */
