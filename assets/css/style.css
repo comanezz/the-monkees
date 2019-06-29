@@ -31,11 +31,14 @@ h4 {
     font-weight: 900; 
 }
 
-form p {
+.message-alert {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.yellow-font {
+    color: #eec802;
+}
 /* ---------------------------------------- BACKGROUND IMAGE AND BACKGROUND SIZE*/
 
 .monkees-bg {
@@ -215,11 +218,15 @@ form p {
     margin-bottom: 30px;
 }
 
+.timeline-item p, .message-alert.yellow-font {
+    margin: 0;
+    padding: 0;
+}
+
 .timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
     color: #fafafa;
-    border-left: 1px solid;
 }
 
 .timeline-item:before {
@@ -256,6 +263,11 @@ form p {
     margin-top: 36px;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 /* ---------------------------------------- FOOTER */
 
 footer {
@@ -274,7 +286,8 @@ footer {
 
 .icon-title {
     /* Give some space between the icon and the title */
-    margin-right: 5px;
+    /* margin-right: 5px; */ 
+    /* Should I keep this or remove it using only a space in the title? */
 }
 
 /*------ ICONS Footer */
