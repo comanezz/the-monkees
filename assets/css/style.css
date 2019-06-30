@@ -73,6 +73,12 @@ h4 {
     overflow: auto;
 }
 
+/*.main-container {*/
+/*    height: calc(100vh - 111px);*/
+/*    margin-top: 58px;*/
+/*    overflow: auto;*/
+/*}*/
+
 /* ---------------------------------------- BUTTONS */
 
 /* NAVBAR BUTTONS */
@@ -188,7 +194,7 @@ h4 {
     width: 85%;
     margin-top: 15px;
 }
-/* Images */
+/* Images in music */
 /* All the img */
 .img-cover {
     height: 225px;
@@ -283,7 +289,7 @@ table .message-alert {
 /* ---------------------------------------- FOOTER */
 
 footer {
-    height: 53px;
+    min-height: 53px;
     position: fixed;
     bottom: 0;
 }
@@ -354,6 +360,10 @@ footer .fa:hover {
 @media screen and (min-width: 576px) {
     .spotify-width {
         width: 380px;
+    }
+    
+    .jumbotron {
+    padding: 3rem 2rem;
     }
 }
 
