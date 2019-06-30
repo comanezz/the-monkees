@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Exo|Halant|Roboto:100,200,300,400,500,600,700,800,900&display=swap');
 
+body, h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+nav .btn {
+    font-weight: 600;
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -12,10 +20,6 @@
 section {
     font-family: "Barlow condensed", "Roboto", sans-serif;
     color: rgba(255, 255, 255, 1);
-}
-
-h1 {
-    font-weight: 700;
 }
 
 h1, h2, h3 {
@@ -37,7 +41,7 @@ h4 {
 }
 
 .yellow-font {
-    color: #eec802;
+    color: #ffd600;
 }
 /* ---------------------------------------- BACKGROUND IMAGE AND BACKGROUND SIZE*/
 
@@ -223,7 +227,7 @@ h4 {
     margin-bottom: 30px;
 }
 
-.timeline-item p, .message-alert.yellow-font {
+.timeline-item p {
     margin: 0;
     padding: 0;
 }
@@ -268,9 +272,8 @@ h4 {
     margin-top: 36px;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
+table .message-alert {
+    position: absolute;
 }
 
 /* ---------------------------------------- FOOTER */
