@@ -76,7 +76,7 @@ html, body {
 } */
 
 .main-container {
-    height: calc(100vh - 111px);
+    height: calc(100vh - 53px);
     padding-top: 58px;
     overflow: auto;
 }
@@ -293,7 +293,7 @@ table .message-alert {
 
 footer {
     min-height: 53px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
