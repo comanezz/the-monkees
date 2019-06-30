@@ -63,17 +63,23 @@ h4 {
     background-size: cover;
 }
 
-.main-container {
-    height: calc(100vh - 111px);
-    margin-top: 58px;
-    overflow: auto;
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-/*.main-container {*/
-/*    height: calc(100vh - 111px);*/
-/*    margin-top: 58px;*/
-/*    overflow: auto;*/
-/*}*/
+/* .main-container {
+    min-height: 100%;
+    padding-top: 58px;
+    overflow: auto;
+} */
+
+.main-container {
+    height: calc(100vh - 53px);
+    padding-top: 58px;
+    overflow: auto;
+}
 
 /* ---------------------------------------- BUTTONS */
 
