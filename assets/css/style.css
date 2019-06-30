@@ -284,6 +284,8 @@ table .message-alert {
 
 footer {
     height: 53px;
+    position: fixed;
+    bottom: 0;
 }
 
 /* SOCIAL ICON space between them*/
