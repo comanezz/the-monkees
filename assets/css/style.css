@@ -201,6 +201,11 @@ h4 {
     border-radius: 25px;
 }
 
+/* Spotify Playlist Width */
+
+.spotify-width {
+    width: 100%;
+}
 /*---- Modals */
 /* Remove the visible border */
 
@@ -336,6 +341,12 @@ footer .fa:hover {
 }
 
 /* ---------------------------------------- MEDIA QUERIES */
+
+@media screen and (min-width: 576px) {
+    .spotify-width {
+        width: 380px;
+    }
+}
 
 /* Tablet and more */
 @media screen and (min-width: 768px) {
