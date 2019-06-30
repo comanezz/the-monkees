@@ -76,7 +76,7 @@ html, body {
 } */
 
 .main-container {
-    height: calc(100vh - 53px);
+    height: calc(100vh - 106px);
     padding-top: 58px;
     overflow: auto;
 }
