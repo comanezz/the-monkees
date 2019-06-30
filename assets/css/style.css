@@ -293,7 +293,7 @@ table .message-alert {
 
 footer {
     min-height: 53px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
 }
 
