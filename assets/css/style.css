@@ -372,12 +372,6 @@ footer .fa:hover {
 /* Desktop and Full Screen */
 @media screen and (min-width: 992px) {
     
-    /* Video Page */
-    /*.carousel-item iframe {*/
-    /*height: 588px;*/
-}
-    
-    
     /* Reducing the size of the youtube video */
     .video-responsive {
         padding-bottom: 35%;
