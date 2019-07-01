@@ -237,10 +237,6 @@ html, body {
 
 /* --------------------- Tour PAGE */
 
-.date-content {
-    margin-bottom: 30px;
-}
-
 .timeline-item p {
     margin: 0;
     padding: 0;
@@ -289,9 +285,6 @@ html, body {
 table .message-alert {
     position: absolute;
 }
-
-/* --------------------- Event page */
-
 
 /* ---------------------------------------- FOOTER */
 
@@ -358,25 +351,38 @@ footer .fa:hover {
 
 /* ---------------------------------------- MEDIA QUERIES */
 
+/* Small devices (landscape phones, 576px and up) */
+
 @media screen and (min-width: 576px) {
+
+/* Music page */
     .spotify-width {
         width: 380px;
     }
     
+/* Event page */
+
     .jumbotron {
     padding: 3rem 2rem;
     }
 }
 
-/* Tablet and more */
+/* Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
     
 }
 
 
-/* Desktop and Full Screen */
+/* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    /* VIDEO PAGE */
+    
+    /* Carousel video height */
+    
+    .carousel-item iframe {
+        height: 566px;
+    }
     
     /* Reducing the size of the youtube video */
     .video-responsive {
