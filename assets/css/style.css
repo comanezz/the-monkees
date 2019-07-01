@@ -146,35 +146,34 @@ html, body {
 }
 /* ---------------------  VIDEO PAGE */
 
+/* Carousel button */
+
+/* Need to reduce the width and height because the click to action was too large */
+.carousel-control-next, .carousel-control-prev {
+    height: 50px;
+    top: 50%;
+    bottom: 50%;
+    width: 7%;
+}
+
 /* ---- VIDEO PART */
 
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
+/*.video-responsive {*/
+/*    overflow: hidden;*/
+/*    padding-bottom: 56.25%;*/
+/*    position: relative;*/
+/*    height: 0;*/
+/*    margin-bottom: 15px;*/
+/*    margin-top: 15px;*/
+/*}*/
 
-.video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-/* Button space in the column in the video page*/
-/* Need space at the bottom */
-.button-column {
-    margin-bottom: 38px;
-    border-radius: 5px;
-}
-/* Need little bit space on the top of the message */
-.first-video-container .button-column {
-    padding-top: .5rem;
-}
+/*.video-responsive iframe {*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*}*/
 
 /* --------------------- Music PAGE */
 
