@@ -77,9 +77,13 @@ html, body {
 
 .main-container {
     height: calc(100vh - 53px);
-    padding-top: 58px;
+    margin-top: 58px;
     overflow: auto;
-    padding-bottom: 53px;
+    /*padding-bottom: 53px;*/
+}
+
+.margin-bottom {
+    margin-bottom: 53px
 }
 
 /* ---------------------------------------- BUTTONS */
