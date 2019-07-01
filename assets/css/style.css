@@ -79,7 +79,7 @@ html, body {
     height: calc(100vh - 53px);
     padding-top: 58px;
     overflow: auto;
-    padding-bottom: 53px;
+    padding-bottom: 159px;
 }
 
 /* ---------------------------------------- BUTTONS */
