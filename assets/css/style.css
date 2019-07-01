@@ -289,6 +289,13 @@ table .message-alert {
     position: absolute;
 }
 
+/* --------------------- Event page */
+
+.jumbotron {
+    margin-bottom: 200px;
+}
+
+
 /* ---------------------------------------- FOOTER */
 
 footer {
