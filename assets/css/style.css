@@ -79,6 +79,7 @@ html, body {
     height: calc(100vh - 53px);
     padding-top: 58px;
     overflow: auto;
+    padding-bottom: 53px;
 }
 
 /* ---------------------------------------- BUTTONS */
@@ -291,10 +292,6 @@ table .message-alert {
 
 /* --------------------- Event page */
 
-.jumbotron {
-    margin-bottom: 200px;
-}
-
 
 /* ---------------------------------------- FOOTER */
 
@@ -374,11 +371,7 @@ footer .fa:hover {
 /* Tablet and more */
 
 @media screen and (min-width: 768px) {
-    /* Video Page */
-    /* Need little bit space on the top */
-    .second-video-container .button-column, .third-video-container .button-column {
-        padding-top: .5rem;
-    }
+    
 }
 
 
