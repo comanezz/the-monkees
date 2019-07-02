@@ -42,17 +42,17 @@ h4 {
 
 /* ---------------------------------------- BACKGROUND IMAGE AND BACKGROUND SIZE*/
 
-.monkees-bg {
-    background: url("../images/monkees-together.gif");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center 26%;
-    background-repeat: no-repeat;
-    height: 300px;
-    position: relative;
-}
+/*.monkees-bg {*/
+/*    background: url("../images/monkees-together.gif");*/
+/*    -webkit-background-size: cover;*/
+/*    -moz-background-size: cover;*/
+/*    -o-background-size: cover;*/
+/*    background-size: cover;*/
+/*    background-position: center 26%;*/
+/*    background-repeat: no-repeat;*/
+/*    height: 300px;*/
+/*    position: relative;*/
+/*}*/
 
 .dark-bg {
     /* Found how to darker the bg-img through this link https://stackoverflow.com/questions/26621513/darken-css-background-image */
@@ -138,6 +138,13 @@ h4 {
     width: 35px;
     border: 0;
 }
+
+/* ---------------------  HOME PAGE */
+
+.carousel-item img {
+    height: 220px;
+}
+
 /* ---------------------  VIDEO PAGE */
 
 /* Carousel button */
