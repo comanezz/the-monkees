@@ -80,6 +80,10 @@ h4 {
     padding-bottom: 106px;
 }
 
+.home-page {
+    margin-top: 58px;
+}
+
 /* ---------------------------------------- BUTTONS */
 
 /* NAVBAR BUTTONS */
@@ -152,7 +156,7 @@ h4 {
 /* Click to action button promo */
 
 .promo {
-    height: 110px;
+    height: 104px;
     width: 100%;
     padding: 0 20px 0 0;
     /*background: #393633;*/
@@ -326,9 +330,14 @@ table .message-alert {
 
 /* ---------------------------------------- FOOTER */
 
+.home-page footer {
+    min-height: 53px;
+    position: static;
+}
+
 footer {
     min-height: 53px;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
 }
 
