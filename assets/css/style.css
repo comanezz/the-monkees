@@ -337,7 +337,7 @@ table .message-alert {
 
 footer {
     min-height: 53px;
-    /*position: fixed;*/
+    position: fixed;
     bottom: 0;
 }
 
