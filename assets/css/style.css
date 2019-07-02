@@ -87,6 +87,9 @@ h4 {
     height: 100vh;
 }
 
+.music-page {
+}
+
 /* ---------------------------------------- BUTTONS */
 
 /* NAVBAR BUTTONS */
@@ -135,10 +138,14 @@ h4 {
 
 /* ---------------------------------------- SECTION */
 
-/* Top and Bottom Space Title All Page */
+/* Top and Bottom Space */
 .main-title {
     margin-top: 78px;
     margin-bottom: 38px;
+}
+
+.margin-bottom {
+    margin-bottom: 106px;
 }
 
 /*  Block Divider Line */

@@ -13,48 +13,49 @@
 </head>
 
 <body>
-    <!-- LOGO AND NAVBAR -->
-    <header>
-        <!-- LOGO -->
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand logo mr-0 p-0" href="index.html"><img src="assets/images/monkees-logo.png" alt="The Monkees logo" title = "The Monkees logo" height="42" width="70"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="music-page dark-bg">
+        <!-- LOGO AND NAVBAR -->
+        <header>
+            <!-- LOGO -->
+            <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+                <a class="navbar-brand logo mr-0 p-0" href="index.html"><img src="assets/images/monkees-logo.png" alt="The Monkees logo" title = "The Monkees logo" height="42" width="70"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                  </button>
-            <!-- NAV AND LINKS -->
-            <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link current" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link" href="tour.html">Tour</a>
-                    </li>
-                    <!-- BOOK AN EVENT BUTTON-->
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-info" href="event.html">Book an Event</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- /Logo and Navbar -->
+                <!-- NAV AND LINKS -->
+                <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link current" href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link" href="tour.html">Tour</a>
+                        </li>
+                        <!-- BOOK AN EVENT BUTTON-->
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-info" href="event.html">Book an Event</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- /Logo and Navbar -->
 
         <!-- SECTION -->
         <section>
             <!-- Title -->
-            <div class="container-fluid text-center main-container dark-bg">
+            <div class="container-fluid text-center">
                 <div class="row">
                     <div class="col">
                         <h1 class="text-uppercase main-title"><i class="fa fa-music icon-title"></i> Music</h1>
                     </div>
-                </div>      
+                </div>
                 <!-- Music Container -->
                 <div class="container text-center music-content">
                     <!-- First Row Section -->
@@ -97,8 +98,7 @@
                         <!-- Column section-->
                         <div class="col-12 col-sm-6 col-audio">
                             <!-- Image -->
-                            <img src="assets/images/cover3.jpg" alt="cover 3" title="cover 3"
-                                class="img-cover cover-space">
+                            <img src="assets/images/cover3.jpg" alt="cover 3" title="cover 3" class="img-cover cover-space">
                             <h4>- Im A Believer -</h4>
                             <audio controls class="music-player">
                                 <!-- Audio -->
@@ -114,8 +114,7 @@
                         <!-- Column section-->
                         <div class="col-12 col-sm-6 col-audio">
                             <!-- Image -->
-                            <img src="assets/images/cover1.jpg" alt="cover 4" title="cover 4"
-                                class="img-cover cover-space">
+                            <img src="assets/images/cover1.jpg" alt="cover 4" title="cover 4" class="img-cover cover-space">
                             <h4>- Stepping Stone -</h4>
                             <!-- Audio -->
                             <audio controls class="music-player">
@@ -132,13 +131,11 @@
                     <!-- Playlist Album -->
                     <div class="row">
                         <div class="col">
-                            <img src="assets/images/album.jpg" alt="album image" title="album image"
-                                class="img-cover cover-space">
+                            <img src="assets/images/album.jpg" alt="album image" title="album image" class="img-cover cover-space">
                             <h4>Checkout Our New Album<span class="d-block">- Below -</span>
                             </h4>
-                    <!-- Spotify Playlist -->
-                            <iframe class="spotify-width" src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84"
-                                height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+                            <!-- Spotify Playlist -->
+                            <iframe class="spotify-width margin-bottom" src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
                             </iframe>
                         </div>
                     </div>
@@ -164,120 +161,122 @@
             </div>
         </footer>
         <!-- /FOOTER -->
-    
-    
-    <!------ Modals ------->
-    <!-- First Modal -->
-    <div class="modal fade" id="clarksville" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header white-font no-bottom-border bg-dark">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">"Clarksville" - Lyrics</h5>
-                    <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-                </div>
-                <div class="modal-body white-font text-center dark-bg">
-                    <p>{Intro}<br>
-                        <br> {verse}
-                        <br> Take the last train to Clarksville<br> And I'll meet you at the station<br> You can be here by four thirty<br> Cause I made your reservation<br> Don't be slow<br> Oh, no, no, no<br> Oh, no, no, no<br>
-                        <br> Cause I'm leaving in the morning<br> And I must see you again<br> We'll have one more night together<br> Till the morning brings my train and I must go<br> Oh no, no, no<br> Oh no, no, no<br>
-                        <br> I don't know if I'm ever coming home</a><br>
-                        <br> Take the last train to Clarksville<br> I'll be waiting at the station<br> We'll have time for coffee-flavored kisses<br> And a bit of conversation, oh<br> Oh no, no, no<br> Oh no, no, no<br>
-                        <br> {bridge}
-                        <br> Do do do do do do do do do do do do do do do do<br> Do do do do do do do do do do do do do do do do<br>
-                        <br> Take the last train to Clarksville<br> Now I must hang up the phone<br> I can't hear you in this noisy railroad station all alone<br> I'm feeling low<br> Oh no, no, no<br> Oh no, no, no<br>
-                        <br> And I don't know if I'm ever coming home<br>
-                        <br> Ohhh
-                        <br>
-                        <br> Ahhhhhhh
-                        <br>
-                        <br> Take the last train to Clarksville<br> And I'll meet you at the station<br> You can be here by four thirty<br> Cause I made your reservation<br> Don't be slow<br> Oh, no, no, no<br> Oh, no, no, no<br>
-                        <br> And I don't know if I'm ever coming home<br>
-                        <br> Take the last train to Clarksville (repeat and fade)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Second Modal -->
-    <div class="modal fade" id="daydreambeliever" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header white-font no-bottom-border bg-dark">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">"Day Dream Believer" - Lyrics</h5>
-                    <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-                </div>
-                <div class="modal-body white-font text-center dark-bg">
-                    <p>
-                        Oh, I could hide 'neath the wings<br> Of the bluebird as she sings<br> The six o'clock alarm would never ring<br> But it rings and I rise<br> Wipe the sleep out of my eyes<br> My shavin' razor's cold and it stings<br>
-                        <br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br>
-                        <br> You once thought of me<br> As a white knight on his steed<br> Now you know how happy I can be<br> Oh, and our good times start and end<br> Without dollar one to spend<br> But how much, baby, do we really need<br>
-                        <br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br>
-                        <br>
-                        <i>[Instrumental interlude]</i><br>
-                        <br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br>
-                        <i>[Repeat and fade]</i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!-- Third Modal -->
-    <div class="modal fade" id="imabeliever" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header white-font no-bottom-border bg-dark">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">"Im A Believer" - Lyrics</h5>
-                    <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-                </div>
-                <div class="modal-body white-font text-center dark-bg">
-                    <p>
-                        I thought love was only true in fairy tales<br> Meant for someone else but not for me.<br> Love was out to get me<br> That's the way it seemed.<br> Disappointment haunted all my dreams.<br>
-                        <br> Then I saw her face, now I'm a believer<br> Not a trace of doubt in my mind.<br> I'm in love, I'm a believer!<br> I couldn't leave her if I tried.<br>
-                        <br> I thought love was more or less a given thing,<br> Seems the more I gave the less I got.<br> What's the use in tryin'?<br> All you get is pain.<br> When I needed sunshine I got rain.<br>
-                        <br> Then I saw her face, now I'm a believer<br> Not a trace of doubt in my mind.<br> I'm in love, I'm a believer!<br> I couldn't leave her if I tried.<br>
-                        <br> Love was out to get me<br> Well that's the way it seemed<br> Dissapointment haunted all my dreams<br>
-                        <br> But then I saw her face, now I'm a believer<br> Not a trace of doubt in my mind.<br> I'm in love, I'm a believer!<br> I couldn't leave her if I tried.<br>
-                        <br> I'm a believer, I'm a believer yeah yeah
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Fourth Modal -->
-    <div class="modal fade" id="steppingstone" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header white-font no-bottom-border bg-dark">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">"Stepping Stone" - Lyrics</h5>
-                    <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-                </div>
-                <div class="modal-body white-font text-center dark-bg">
-                    <p>
-                         I I I I I'm not your stepping stone<br> I I I I I'm not your stepping stone<br>
-                        <br> You're trying to make your mark in society<br> Using all the tricks that you used on me.<br> You're reading all those high fashion magazines<br> The clothes you're wearin' girl are causing public scenes.<br>
-                        <br> I said<br> I I I I I'm not your stepping stone<br> I I I I I'm not your stepping stone<br> Not your stepping stone,<br> Not your stepping stone.<br>
-                        <br> When I first met you girl you didn't have no shoes<br> Now you're walking 'round like you're front page news.<br> You've been awful careful 'bout the friends you choose<br> But you won't find my name in your book of Who's Who.<br>
-                        <br> I said<br> I I I I I'm not your stepping stone<br> I I I I I'm not your stepping stone<br> Not your stepping stone,<br> Not your stepping stone.
-                    </p>
-                </div>
-                <div class="modal-footer no-top-border bg-dark">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!------ Modals ------->
+        <!-- First Modal -->
+        <div class="modal fade" id="clarksville" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header white-font no-bottom-border bg-dark">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">"Clarksville" - Lyrics</h5>
+                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body white-font text-center dark-bg">
+                        <p>{Intro}<br>
+                            <br> {verse}
+                            <br> Take the last train to Clarksville<br> And I'll meet you at the station<br> You can be here by four thirty<br> Cause I made your reservation<br> Don't be slow<br> Oh, no, no, no<br> Oh, no, no, no<br>
+                            <br> Cause I'm leaving in the morning<br> And I must see you again<br> We'll have one more night together<br> Till the morning brings my train and I must go<br> Oh no, no, no<br> Oh no, no, no<br>
+                            <br> I don't know if I'm ever coming home</a><br>
+                            <br> Take the last train to Clarksville<br> I'll be waiting at the station<br> We'll have time for coffee-flavored kisses<br> And a bit of conversation, oh<br> Oh no, no, no<br> Oh no, no, no<br>
+                            <br> {bridge}
+                            <br> Do do do do do do do do do do do do do do do do<br> Do do do do do do do do do do do do do do do do<br>
+                            <br> Take the last train to Clarksville<br> Now I must hang up the phone<br> I can't hear you in this noisy railroad station all alone<br> I'm feeling low<br> Oh no, no, no<br> Oh no, no, no<br>
+                            <br> And I don't know if I'm ever coming home<br>
+                            <br> Ohhh
+                            <br>
+                            <br> Ahhhhhhh
+                            <br>
+                            <br> Take the last train to Clarksville<br> And I'll meet you at the station<br> You can be here by four thirty<br> Cause I made your reservation<br> Don't be slow<br> Oh, no, no, no<br> Oh, no, no, no<br>
+                            <br> And I don't know if I'm ever coming home<br>
+                            <br> Take the last train to Clarksville (repeat and fade)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Modal -->
+        <div class="modal fade" id="daydreambeliever" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header white-font no-bottom-border bg-dark">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">"Day Dream Believer" - Lyrics</h5>
+                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body white-font text-center dark-bg">
+                        <p>
+                            Oh, I could hide 'neath the wings<br> Of the bluebird as she sings<br> The six o'clock alarm would never ring<br> But it rings and I rise<br> Wipe the sleep out of my eyes<br> My shavin' razor's cold and it stings<br>
+                            <br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br>
+                            <br> You once thought of me<br> As a white knight on his steed<br> Now you know how happy I can be<br> Oh, and our good times start and end<br> Without dollar one to spend<br> But how much, baby, do we really need<br>
+                            <br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br>
+                            <br>
+                            <i>[Instrumental interlude]</i><br>
+                            <br> Cheer up, Sleepy Jean<br> Oh, what can it mean<br> To a daydream believer<br> And a homecoming queen<br>
+                            <i>[Repeat and fade]</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third Modal -->
+        <div class="modal fade" id="imabeliever" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header white-font no-bottom-border bg-dark">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">"Im A Believer" - Lyrics</h5>
+                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body white-font text-center dark-bg">
+                        <p>
+                            I thought love was only true in fairy tales<br> Meant for someone else but not for me.<br> Love was out to get me<br> That's the way it seemed.<br> Disappointment haunted all my dreams.<br>
+                            <br> Then I saw her face, now I'm a believer<br> Not a trace of doubt in my mind.<br> I'm in love, I'm a believer!<br> I couldn't leave her if I tried.<br>
+                            <br> I thought love was more or less a given thing,<br> Seems the more I gave the less I got.<br> What's the use in tryin'?<br> All you get is pain.<br> When I needed sunshine I got rain.<br>
+                            <br> Then I saw her face, now I'm a believer<br> Not a trace of doubt in my mind.<br> I'm in love, I'm a believer!<br> I couldn't leave her if I tried.<br>
+                            <br> Love was out to get me<br> Well that's the way it seemed<br> Dissapointment haunted all my dreams<br>
+                            <br> But then I saw her face, now I'm a believer<br> Not a trace of doubt in my mind.<br> I'm in love, I'm a believer!<br> I couldn't leave her if I tried.<br>
+                            <br> I'm a believer, I'm a believer yeah yeah
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Modal -->
+        <div class="modal fade" id="steppingstone" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header white-font no-bottom-border bg-dark">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">"Stepping Stone" - Lyrics</h5>
+                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body white-font text-center dark-bg">
+                        <p>
+                            I I I I I'm not your stepping stone<br> I I I I I'm not your stepping stone<br>
+                            <br> You're trying to make your mark in society<br> Using all the tricks that you used on me.<br> You're reading all those high fashion magazines<br> The clothes you're wearin' girl are causing public scenes.<br>
+                            <br> I said<br> I I I I I'm not your stepping stone<br> I I I I I'm not your stepping stone<br> Not your stepping stone,<br> Not your stepping stone.<br>
+                            <br> When I first met you girl you didn't have no shoes<br> Now you're walking 'round like you're front page news.<br> You've been awful careful 'bout the friends you choose<br> But you won't find my name in your book of Who's
+                            Who.<br>
+                            <br> I said<br> I I I I I'm not your stepping stone<br> I I I I I'm not your stepping stone<br> Not your stepping stone,<br> Not your stepping stone.
+                        </p>
+                    </div>
+                    <div class="modal-footer no-top-border bg-dark">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
