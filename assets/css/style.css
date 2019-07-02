@@ -75,13 +75,16 @@ h4 {
 
 .main-container {
     height: 100vh;
-    padding-top: 58px;
     overflow: auto;
     padding-bottom: 106px;
 }
 
 .home-page {
     margin-top: 58px;
+}
+
+.video-page {
+    height: 100vh;
 }
 
 /* ---------------------------------------- BUTTONS */
@@ -134,7 +137,7 @@ h4 {
 
 /* Top and Bottom Space Title All Page */
 .main-title {
-    margin-top: 20px;
+    margin-top: 78px;
     margin-bottom: 38px;
 }
 
