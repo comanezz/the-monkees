@@ -78,12 +78,6 @@ html, body {
     height: 100%;
 }
 
-.main-container {
-    height: 100vh;
-    overflow: auto;
-    padding-bottom: 106px;
-}
-
 .home-page {
     margin-top: 58px;
 }
