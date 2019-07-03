@@ -161,6 +161,7 @@ h4 {
 }
 
 /* ---------------------  HOME PAGE */
+
 /* Carousel */
 .carousel-item img {
     height: 220px;
@@ -204,6 +205,13 @@ h4 {
 
 /* Videos */
 
+/* I want a full screen video */
+
+.side-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .video-page iframe {
     height: 215px;
 }
@@ -217,25 +225,6 @@ h4 {
     bottom: 50%;
     width: 7%;
 }
-
-/* ---- VIDEO PART */
-
-/*.video-responsive {*/
-/*    overflow: hidden;*/
-/*    padding-bottom: 56.25%;*/
-/*    position: relative;*/
-/*    height: 0;*/
-/*    margin-bottom: 15px;*/
-/*    margin-top: 15px;*/
-/*}*/
-
-/*.video-responsive iframe {*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*    position: absolute;*/
-/*}*/
 
 /* --------------------- Music PAGE */
 
@@ -258,6 +247,7 @@ h4 {
     width: 85%;
     margin-top: 15px;
 }
+
 /* Images in music */
 /* All the img */
 .img-cover {
@@ -273,12 +263,6 @@ h4 {
 .music-content .btn{
     margin-top: 15px;
     border-radius: 25px;
-}
-
-/* Spotify Playlist Width */
-
-.spotify-width {
-    width: 100%;
 }
 
 /*---- Modals */
@@ -420,28 +404,73 @@ footer .fa:hover {
 /* Small devices (landscape phones, 576px and up) */
 
 @media screen and (min-width: 576px) {
-
-/* Music page */
-    .spotify-width {
-        width: 380px;
-    }
+    /* ------------------ Video Page */
     
-/* Event page */
-
+    /*.video-page {*/
+    /*    height: 100%;*/
+    /*}*/
+    
+    /*.video-page iframe {*/
+    /*height: 311px;*/
+    /*}*/
+    
+    /*.video-page .carousel {*/
+    /*    margin-bottom: 106px;*/
+    /*}*/
+    
+    /* Event Page */
+    
     .jumbotron {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem; /* better looking with less space */
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
+    /* ------------------ Home Page */
     
+    /* Carousel */
+    
+    .carousel-item img {
+    height: 377px;
+    }
+    
+    /* ------------------ Video Page */
+    
+    /* Videos */
+    
+    .side-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    
+    .video-page iframe {
+    height: 460px;
+    }
+    
+    /* ------------------ Tour Page */
+    
+    
+    /* ------------------ Event Page */
+    
+    .event-page .margin-bottom {
+        margin-bottom: 98px;
+    }
 }
 
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    
+    /* HOME PAGE */
+    
+    /* Carousel */
+    
+    .carousel-item img {
+    height: 440px;
+    }
+    
     /* VIDEO PAGE */
     
     /* Carousel video height */
@@ -453,6 +482,19 @@ footer .fa:hover {
     /* Reducing the size of the youtube video */
     .video-responsive {
         padding-bottom: 35%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    
+    /* HOME PAGE */
+    
+    /* Carousel */
+    
+    .carousel-item img {
+    height: 528px;
     }
 }
 
