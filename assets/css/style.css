@@ -93,6 +93,11 @@ h4 {
 .tour-page {
 }
 
+.event-page {
+    height: 100vh;
+    overflow: auto;
+}
+
 /* ---------------------------------------- BUTTONS */
 
 /* NAVBAR BUTTONS */

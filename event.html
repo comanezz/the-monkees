@@ -13,71 +13,72 @@
 </head>
 
 <body>
-    <!-- LOGO AND NAVBAR -->
-    <header>
-        <!-- LOGO -->
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand logo mr-0 p-0" href="index.html"><img src="assets/images/monkees-logo.png" alt="The Monkees logo" title = "The Monkees logo" height="42" width="70"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-            <!-- NAV AND LINKS -->
-            <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item mx-2 underline-hover">
-                        <a class="nav-link" href="tour.html">Tour</a>
-                    </li>
-                    <!-- BOOK AN EVENT BUTTON-->
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-info current" href="event.html">Book an Event</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- /Logo and Navbar -->
-
-    <!-- SECTION -->
-    <section>
-        <div class="container-fluid main-container event-page dark-bg">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h1 class="text-uppercase main-title"><i class="fa fa-calendar icon-title"></i> Book An Event</h1>
+    <div class="event-page dark-bg">
+        <!-- LOGO AND NAVBAR -->
+        <header>
+            <!-- LOGO -->
+            <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+                <a class="navbar-brand logo mr-0 p-0" href="index.html"><img src="assets/images/monkees-logo.png" alt="The Monkees logo" title = "The Monkees logo" height="42" width="70"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- NAV AND LINKS -->
+                <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                        </li>
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link" href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item mx-2 underline-hover">
+                            <a class="nav-link" href="tour.html">Tour</a>
+                        </li>
+                        <!-- BOOK AN EVENT BUTTON-->
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-info current" href="event.html">Book an Event</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-10 col-md-6">
-                    <h1 class="text-center">We can play at your Event</h1>
-                    <p class="text-center">Fill the form if you want to see us playing in your event. We will get back to you as soon as possible.
-                    </p>
-                    <div class="jumbotron mb-0 bg-secondary">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Type of Event</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+            </nav>
+        </header>
+        <!-- /Logo and Navbar -->
+
+        <!-- SECTION -->
+        <section>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h1 class="text-uppercase main-title"><i class="fa fa-calendar icon-title"></i> Book An Event</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-10 col-md-6">
+                        <h1 class="text-center">We can play at your Event</h1>
+                        <p class="text-center">Fill the form if you want to see us playing in your event. We will get back to you as soon as possible.
+                        </p>
+                        <div class="jumbotron margin-bottom bg-secondary">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Type of Event</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
                                 <option>Birthday Party</option>
                                 <option>Wedding party</option>
                                 <option>Christmas Party</option>
                                 <option>Festival</option>
                             </select>
-                            </div>
-                            <div class="form-row justify-content-between">
-                                <div class="form-group col-4">
-                                    <label for="exampleFormControlSelect3">Day</label>
-                                    <select class="form-control" id="exampleFormControlSelect3">
+                                </div>
+                                <div class="form-row justify-content-between">
+                                    <div class="form-group col-4">
+                                        <label for="exampleFormControlSelect3">Day</label>
+                                        <select class="form-control" id="exampleFormControlSelect3">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -110,10 +111,10 @@
                                 <option>30</option>
                                 <option>31</option>
                             </select>
-                                </div>
-                                <div class="form-group col-4">
-                                    <label for="exampleFormControlSelect4">Month</label>
-                                    <select class="form-control" id="exampleFormControlSelect4">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="exampleFormControlSelect4">Month</label>
+                                        <select class="form-control" id="exampleFormControlSelect4">
                                 <option>January</option>
                                 <option>February</option>
                                 <option>March</option>
@@ -127,68 +128,69 @@
                                 <option>November</option>
                                 <option>December</option>
                             </select>
-                                </div>
-                                <div class="form-group col-4">
-                                    <label for="exampleFormControlSelect5">Year</label>
-                                    <select class="form-control" id="exampleFormControlSelect5">
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="exampleFormControlSelect5">Year</label>
+                                        <select class="form-control" id="exampleFormControlSelect5">
                                 <option>2019</option>
                                 <option>2020</option>
                                 <option>2021</option>
                             </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity" required minlength="3">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control" required>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity" required minlength="3">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control" required>
                                     <option selected value="">Choose...</option>
                                     <option>Florida</option>
                                     <option>Texas</option>
                                     <option>California</option>
                                     </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Additional Information:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="row justify-content-center">
-                                <button type="submit" class="btn btn-info btn-lg btn-font">Send</button>
-                            </div>
-                            <p class="message-alert text-center">*This functionality is not working yet</p>
-                        </form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Additional Information:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <button type="submit" class="btn btn-info btn-lg btn-font">Send</button>
+                                </div>
+                                <p class="message-alert text-center">*This functionality is not working yet</p>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- /SECTION -->
+        </section>
+        <!-- /SECTION -->
 
-    <!-- FOOTER -->
-    <footer class="container-fluid d-flex justify-content-center align-items-center bg-dark">
-        <div class="row">
-            <div class="col">
-                <!-- SOCIAL ICONS -->
-                <a class="social-icon" href="https://www.facebook.com/TheMonkees/" target="_blank"><i
+        <!-- FOOTER -->
+        <footer class="container-fluid d-flex justify-content-center align-items-center bg-dark">
+            <div class="row">
+                <div class="col">
+                    <!-- SOCIAL ICONS -->
+                    <a class="social-icon" href="https://www.facebook.com/TheMonkees/" target="_blank"><i
                         class="fa fa-facebook-square fa-2x icon-shadow"></i></a>
-                <a class="social-icon" href="https://twitter.com/themonkees?lang=en" target="_blank"><i
+                    <a class="social-icon" href="https://twitter.com/themonkees?lang=en" target="_blank"><i
                         class="fa fa-twitter fa-2x icon-shadow"></i></a>
-                <a class="social-icon" href="https://www.youtube.com/user/themonkees" target="_blank"><i
+                    <a class="social-icon" href="https://www.youtube.com/user/themonkees" target="_blank"><i
                         class="fa fa-youtube fa-2x icon-shadow"></i></a>
-                <a class="social-icon" href="https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck" target="_blank"><i
+                    <a class="social-icon" href="https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck" target="_blank"><i
                         class="fa fa-spotify fa-2x icon-shadow"></i></a>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!-- /FOOTER -->
+        </footer>
+        <!-- /FOOTER -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
