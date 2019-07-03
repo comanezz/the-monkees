@@ -73,6 +73,11 @@ h4 {
     overflow: auto;
 } */
 
+
+html, body {
+    height: 100%;
+}
+
 .main-container {
     height: 100vh;
     overflow: auto;
@@ -84,7 +89,7 @@ h4 {
 }
 
 .video-page {
-    height: 100vh;
+    height: 100%;
 }
 
 .music-page {
@@ -94,6 +99,8 @@ h4 {
 }
 
 .event-page {
+    height: 100%;
+    overflow: auto;
 }
 
 /* ---------------------------------------- BUTTONS */
