@@ -199,6 +199,12 @@ h4 {
 
 /* ---------------------  VIDEO PAGE */
 
+/* Videos */
+
+.video-page iframe {
+    height: 215px;
+}
+
 /* Carousel button */
 
 /* Need to reduce the width and height because the click to action was too large */
