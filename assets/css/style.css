@@ -73,17 +73,12 @@ h4 {
     overflow: auto;
 } */
 
-
-html, body {
-    height: 100%;
-}
-
 .home-page {
     margin-top: 58px;
 }
 
 .video-page {
-    height: 100%;
+    height: 100vh;
 }
 
 .music-page {
@@ -147,6 +142,9 @@ html, body {
 .main-title {
     margin-top: 78px;
     margin-bottom: 38px;
+}
+.margin-top {
+    height: 58px;
 }
 
 .margin-bottom {
