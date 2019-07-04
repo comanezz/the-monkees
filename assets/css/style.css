@@ -87,6 +87,13 @@ h4 {
     background-size: cover;
 }
 
+.logo img {
+    position: absolute;
+    height: 120%;
+    width: 22%;
+    top: 0;
+}
+
 .home-page, .video-page, .music-page, .tour-page, .event-page {
     padding-top: 58px; /* better using padding than margin because there is no scroll effect for medium devices and up */
 }
@@ -244,6 +251,10 @@ h4 {
 /* ---------------------  VIDEO PAGE */
 
 /* Videos */
+
+.video-page .carousel {
+    margin-top: 1.5rem;
+}
 
 /* I want a full width video */
 
@@ -477,6 +488,13 @@ footer .fa:hover {
 
 @media screen and (min-width: 768px) {
 
+    .logo img {
+        position: absolute;
+        height: 150%;
+        width: 20%;
+        top: 0;
+    }
+
     .main-title {
         font-size: 2.5rem;
     }
@@ -566,5 +584,19 @@ footer .fa:hover {
     min-height: 53px;
     position: fixed;
     bottom: 0;
+    }
+}
+
+@media screen and (min-height: 1080px) { /* To fill the white part between content */
+    
+    /* Video page */
+
+    .video-page .carousel, .event-page .jumbotron {
+        margin-top: 50px;
+    }
+
+    /* Event page */
+    .event-page {
+    height: 100vh;
     }
 }
