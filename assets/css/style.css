@@ -486,7 +486,7 @@ footer .fa:hover {
     /* Carousel */
     
     .carousel-item img {
-    height: 377px;
+    height: 50vh;
     }
     
     /* ------------------ Video Page */
@@ -546,7 +546,8 @@ footer .fa:hover {
     /* ------------------ HOME PAGE */
     
     .carousel-item img {
-    height: 470px;
+    /* height: 530px; */
+    height: 70vh;
     }
 
     .promo-message {
