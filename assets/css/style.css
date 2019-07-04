@@ -87,12 +87,13 @@ h4 {
     background-size: cover;
 }
 
-.home-page {
+.home-page, .video-page, .music-page, .tour-page, .event-page {
     padding-top: 58px; /* better using padding than margin because there is no scroll effect for medium devices and up */
 }
 
 .video-page {
     height: 100vh;
+    overflow: auto;
 }
 
 .music-page {
@@ -154,7 +155,7 @@ h4 {
 
 /* Top and Bottom Space */
 .main-title {
-    margin-top: 78px;
+    margin-top: 20px;
     margin-bottom: 38px;
 }
 .margin-top {
@@ -187,6 +188,24 @@ h4 {
 
 .carousel-indicators .active {
     background-color: #eee328;
+}
+
+.home-page .carousel-control-prev-icon,
+.home-page .carousel-control-next-icon {
+  background-image: none;
+}
+
+.home-page .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #eee328;
+}
+
+.home-page .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #eee328;
 }
 
 /* Click to action button promo */
@@ -226,7 +245,7 @@ h4 {
 
 /* Videos */
 
-/* I want a full screen video */
+/* I want a full width video */
 
 .side-padding {
     padding-left: 0;
@@ -240,24 +259,6 @@ h4 {
 /* Carousel button */
 
 /* Need to reduce the width and height because the click to action was too large */
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: #eee328;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: #eee328;
-}
 
 .video-page .carousel-control-next, .video-page .carousel-control-prev {
     height: 50px;
@@ -491,6 +492,9 @@ footer .fa:hover {
     /* ------------------ Video Page */
     
     /* Videos */
+    .video-page .carousel {
+        margin-bottom: 106px;
+    }
     
     .side-padding {
     padding-left: 20px;
