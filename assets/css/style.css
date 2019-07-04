@@ -13,10 +13,12 @@ nav .btn {
 .text-uppercase {
     text-transform: uppercase;
 }
+
 .white-font {
     color: rgba(255, 255, 255, 1);
 
 }
+
 section, .main-title {
     font-family: "Orbitron", "Barlow condensed", "Roboto", sans-serif;
     color: rgba(255, 255, 255, 1);
@@ -35,9 +37,14 @@ h4 {
     font-family: "Barlow condensed", "Roboto", sans-serif;
 }
 
-.navbar {
+.navbar-dark .navbar-nav .nav-link {
     font-family: "Orbitron", "Barlow condensed", "Roboto", sans-serif;
     letter-spacing: 2px;
+    color: rgba(238, 227, 40, 1); /* I want to have the same color than the logo */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .promo-message {
@@ -82,8 +89,6 @@ h4 {
 
 .home-page {
     padding-top: 58px; /* better using padding than margin because there is no scroll effect for medium devices and up */
-    height: 100vh;
-    overflow: auto;
 }
 
 .video-page {
@@ -110,11 +115,11 @@ h4 {
 /*  PAGES BUTTONS */
 
 .btn-font {
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.75);
 }
 
 .btn-font:hover {
-    color: rgba(255,255,255, .75);
+    color: rgba(255,255,255, 1);
 }
 
 /* ---------------------------------------- HEADERS */
@@ -176,18 +181,25 @@ h4 {
     height: 220px;
 }
 
+.carousel-indicators li {
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background-color: #eee328;
+}
+
 /* Click to action button promo */
 
 .promo {
     height: 104px;
     width: 100%;
-    padding: 0 20px 0 0;
     /*background: #393633;*/
     background: #00000052;
 }
 
 .promo:hover {
-    border: 2px solid #B68550;
+    border: 2px solid #eee328;
 }
 
 .promo img {
@@ -196,17 +208,17 @@ h4 {
 }
 
 .promo-message {
+    padding-right: 20px;
     display: inline;
-    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.home-page a {
+.promo-container a {
     text-decoration: none;
     color: inherit;
 }
 
-.home-page a:hover {
+.promo-container a:hover {
     color: inherit;
 }
 
@@ -228,7 +240,26 @@ h4 {
 /* Carousel button */
 
 /* Need to reduce the width and height because the click to action was too large */
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #eee328;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #eee328;
+}
+
+.video-page .carousel-control-next, .video-page .carousel-control-prev {
     height: 50px;
     top: 50%;
     bottom: 50%;
@@ -474,10 +505,13 @@ footer .fa:hover {
     
     /* ------------------ HOME PAGE */
     
-    /* Carousel */
-    
     .carousel-item img {
     height: 440px;
+    }
+
+    .promo-message {
+        font-size: 1.2rem;
+        padding-right: 15px;
     }
     
     /* ------------------ VIDEO PAGE */
@@ -495,11 +529,14 @@ footer .fa:hover {
     
     /* ------------------ HOME PAGE */
     
-    /* Carousel */
-    
     .carousel-item img {
     height: 528px;
     }
+
+    .promo-message {
+        padding-right: 20px;
+    }
+
 }
 
 @media (max-width: 767.98px) {
@@ -512,8 +549,11 @@ footer .fa:hover {
     }
 }
 
-@media screen and (min-height: 868px) {
+@media screen and (min-height: 868px) { /* To fill the white part between content */
     
+    .home-page {
+        height: 100vh;
+    }
     .home-page footer {
     min-height: 53px;
     position: fixed;
