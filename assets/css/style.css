@@ -10,10 +10,6 @@ nav .btn {
     font-weight: 600;
 }
 
-.text-uppercase {
-    text-transform: uppercase;
-}
-
 .white-font {
     color: rgba(255, 255, 255, 1);
 
@@ -31,6 +27,10 @@ h1, h2, h3 {
 h4 {
     font-size: 1.2rem;
     letter-spacing: 2.6px;
+}
+
+.main-title { /* I want the title to fit in one line */
+    font-size: 1.3rem;
 }
 
 .tour-page section, .event-page section {
@@ -441,6 +441,13 @@ footer .fa:hover {
 
 /* ---------------------------------------- MEDIA QUERIES */
 
+@media (min-width: 338px) { /* I want the title to fit in one line */
+
+    .main-title {
+    font-size: 1.6rem;
+    }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media screen and (min-width: 576px) {
@@ -468,6 +475,11 @@ footer .fa:hover {
 /* Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
     /* ------------------ Home Page */
     
     /* Carousel */
@@ -530,7 +542,7 @@ footer .fa:hover {
     /* ------------------ HOME PAGE */
     
     .carousel-item img {
-    height: 528px;
+    height: 470px;
     }
 
     .promo-message {
@@ -539,56 +551,15 @@ footer .fa:hover {
 
 }
 
-@media (max-width: 767.98px) {
-    h1 {
-    font-size: 1.6rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-
 @media screen and (min-height: 868px) { /* To fill the white part between content */
     
     .home-page {
-        height: 100vh;
+    height: 100vh;
     }
+
     .home-page footer {
     min-height: 53px;
     position: fixed;
     bottom: 0;
     }
 }
-
-/* ---------------------------------------- check the borders of the grid */
-
- 
-/*nav {*/
-/*    border: 1px solid red;*/
-/*}*/
-
-/*div {*/
-/*    border: 1px solid green;*/
-/*}*/
-
-/*ul {*/
-/*    border: 1px solid yellow;*/
-/*}*/
-
-/*li {*/
-/*    border: 1px dotted blue;*/
-/*}*/
-
-/*a {*/
-/*    border: 1px dotted white;*/
-/*}*/
-
-/*i {*/
-/*    border: 1px solid black;*/
-/*} */
-
-/*.timeline-item {*/
-/*    border: 1px solid red;*/
-/*}*/
-
