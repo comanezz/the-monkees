@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron|Barlow+Condensed|Exo|Halant|Roboto:100,200,300,400,500,600,700,800,900&display=swap');
 
-body, h1, h2, h3, h4 {
-    font-weight: 600;
-}
-
 .white-font {
     color: rgba(255, 255, 255, 1);
 
@@ -266,7 +262,7 @@ nav .btn {
 }
 
 .video-page iframe {
-    height: 100%;
+    height: 215px;
 }
 
 /* Carousel button */
