@@ -223,6 +223,7 @@ nav .btn {
 
 .promo:hover {
     border: 2px solid #eee328;
+    box-sizing: content-box; /* Allow the box when hovered to not be reduced by the border */
 }
 
 .promo img {
@@ -437,6 +438,12 @@ footer .fa:hover {
 }
 
 /*---------------------- SHADOW EFFECTS ICON*/
+
+/* Home Page promo */
+
+.promo {
+    box-shadow: 6px 10px #0f0f0f;
+}
 
 /* ICON in the footer */
 
