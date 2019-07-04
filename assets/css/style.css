@@ -331,6 +331,21 @@ nav .btn {
     border-bottom: 0;
 }
 
+/* Center the title in the modal */
+
+.modal-title {
+    margin-left: auto;
+    margin-right: -2rem;
+}
+
+/* To make sure that the modal close button as the same color than the others when hover it*/
+.close:hover {
+    color: #fff;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+}
 /* --------------------- Tour PAGE */
 
 .timeline-item p {
