@@ -6,10 +6,6 @@ body, h1, h2, h3, h4 {
     font-weight: 600;
 }
 
-nav .btn {
-    font-weight: 600;
-}
-
 .white-font {
     color: rgba(255, 255, 255, 1);
 
@@ -20,13 +16,16 @@ section, .main-title {
     color: rgba(255, 255, 255, 1);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     letter-spacing: 2px;
 }
 
+.video-page h3 {
+    font-size: 1.3rem;
+}
+
 h4 {
-    font-size: 1.2rem;
-    letter-spacing: 2.6px;
+    font-size: 1.05rem;
 }
 
 .main-title { /* I want the title to fit in one line */
@@ -89,41 +88,42 @@ h4 {
 
 .logo img {
     position: absolute;
-    height: 120%;
-    width: 22%;
+    height: 65px;
+    width: 91px;
     top: 0;
 }
 
 .home-page, .video-page, .music-page, .tour-page, .event-page {
     padding-top: 58px; /* better using padding than margin because there is no scroll effect for medium devices and up */
+    overflow: auto;
 }
 
 .video-page {
     height: 100vh;
-    overflow: auto;
-}
-
-.music-page {
-}
-
-.tour-page {
-}
-
-.event-page {
 }
 
 /* ---------------------------------------- BUTTONS */
 
 /* NAVBAR BUTTONS */
 
-.navbar-toggler {
+.navbar-toggler { /* No border around the toggler button */
     border: 0;
+}
+
+.nav-link.btn { /* avoid the btn to take full width in the navbar-toggler */
+    display: inline-block;
+    padding: .375rem .75rem;
+}
+
+nav .btn {
+    font-weight: 600;
 }
 
 /*  PAGES BUTTONS */
 
 .btn-font {
     color: rgba(255,255,255,.75);
+    font-size: 1.2rem;
 }
 
 .btn-font:hover {
@@ -132,7 +132,7 @@ h4 {
 
 /* ---------------------------------------- HEADERS */
 
-.navbar-dark .navbar-nav .nav-link.current {
+.navbar-dark .navbar-nav .nav-link.current { /* The user will know which page he is in */
     color: rgba(255,255,255, 1);
 }
 
@@ -160,13 +160,10 @@ h4 {
 
 /* ---------------------------------------- SECTION */
 
-/* Top and Bottom Space */
+/* Top of the page */
 .main-title {
     margin-top: 20px;
     margin-bottom: 38px;
-}
-.margin-top {
-    height: 58px;
 }
 
 .margin-bottom {
@@ -189,6 +186,7 @@ h4 {
     height: 220px;
 }
 
+/* Changed the arrows and indicators color and form */
 .carousel-indicators li {
     opacity: 1;
 }
@@ -217,10 +215,13 @@ h4 {
 
 /* Click to action button promo */
 
+.promo-container {
+    margin-bottom: 52px;
+}
+
 .promo {
-    height: 104px;
+    height: 90px;
     width: 100%;
-    /*background: #393633;*/
     background: #00000052;
 }
 
@@ -252,6 +253,7 @@ h4 {
 
 /* Videos */
 
+/*  Space between content */
 .video-page .carousel {
     margin-top: 1.5rem;
 }
@@ -264,15 +266,14 @@ h4 {
 }
 
 .video-page iframe {
-    height: 215px;
+    height: 100%;
 }
 
 /* Carousel button */
 
-/* Need to reduce the width and height because the click to action was too large */
+/* Need to reduce the width and height because the click to action was too big */
 
 .video-page .carousel-control-next, .video-page .carousel-control-prev {
-    height: 50px;
     top: 50%;
     bottom: 50%;
     width: 7%;
@@ -298,6 +299,7 @@ h4 {
 .music-player {
     width: 85%;
     margin-top: 15px;
+    height: 35px;
 }
 
 /* Images in music */
@@ -385,11 +387,6 @@ table .message-alert {
 
 /* ---------------------------------------- FOOTER */
 
-.home-page footer {
-    min-height: 53px;
-    position: static;
-}
-
 footer {
     min-height: 53px;
     position: fixed;
@@ -460,22 +457,31 @@ footer .fa:hover {
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 345px) { /* resized to fit srceen width for Iphone SE or under */
 
-@media screen and (min-width: 576px) {
+    .music-page iframe {
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 568px and up) */
+
+@media screen and (min-width: 568px) {
     /* ------------------ Video Page */
-    
-    /*.video-page {*/
-    /*    height: 100%;*/
-    /*}*/
-    
-    /*.video-page iframe {*/
-    /*height: 311px;*/
-    /*}*/
-    
-    /*.video-page .carousel {*/
-    /*    margin-bottom: 106px;*/
-    /*}*/
+
+    .video-page .carousel {
+        margin-bottom: 106px;
+    }
+
+    .music-page h4, .music-content .btn {
+        font-size: 0.9rem;
+    }
+
+    /* ------------------ Music Page */
+
+    .music-player { /* Allow user to be able to use the foward and backward button */
+        width: 100%;
+    }
     
     /* Event Page */
     
@@ -489,10 +495,8 @@ footer .fa:hover {
 @media screen and (min-width: 768px) {
 
     .logo img {
-        position: absolute;
-        height: 150%;
-        width: 20%;
-        top: 0;
+        height: 81px;
+        width: 154px;
     }
 
     .main-title {
@@ -500,7 +504,11 @@ footer .fa:hover {
     }
 
     /* ------------------ Home Page */
-    
+
+    .home-page {
+        height: 100vh;
+    }
+
     /* Carousel */
     
     .carousel-item img {
@@ -509,10 +517,11 @@ footer .fa:hover {
     
     /* ------------------ Video Page */
     
-    /* Videos */
-    .video-page .carousel {
-        margin-bottom: 106px;
+    .video-page h3 {
+        font-size: 1.75rem;
     }
+
+    /* Videos */
     
     .side-padding {
     padding-left: 20px;
@@ -533,15 +542,26 @@ footer .fa:hover {
     }
 }
 
+/* Focus on landscape view of Iphone X and Pixel 2 XL or above */
+
+@media screen and (min-width: 811px) and (max-height: 411px) and (orientation: landscape) {
+    /* ------------------ HOME PAGE */
+
+    .promo-container {
+        margin-bottom: 0px;
+    }
+
+    /* ------------------ VIDEO PAGE */
+    
+    .video-page iframe {
+        height: 230px;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     
     /* ------------------ HOME PAGE */
-    
-    .carousel-item img {
-    height: 440px;
-    }
 
     .promo-message {
         font-size: 1.2rem;
@@ -555,6 +575,14 @@ footer .fa:hover {
     padding-left: 0px;
     padding-right: 0px;
     }
+
+    /* ------------------ MUSIC Page */
+
+    /* ---- Audio Player */
+    /* Size */
+    .music-player {
+    width: 75%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -562,29 +590,15 @@ footer .fa:hover {
 @media (min-width: 1200px) {
     
     /* ------------------ HOME PAGE */
-    
+
     .carousel-item img {
-    /* height: 530px; */
-    height: 70vh;
+    height: 60vh;
     }
 
     .promo-message {
         padding-right: 20px;
     }
 
-}
-
-@media screen and (min-height: 868px) { /* To fill the white part between content */
-    
-    .home-page {
-    height: 100vh;
-    }
-
-    .home-page footer {
-    min-height: 53px;
-    position: fixed;
-    bottom: 0;
-    }
 }
 
 @media screen and (min-height: 1080px) { /* To fill the white part between content */
