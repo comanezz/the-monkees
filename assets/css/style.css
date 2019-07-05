@@ -51,6 +51,7 @@ h1, h2, h3, h4 {
 
 .tour-page h4 {
     font-size: 1.05rem;
+    font-weight: 600;
 }
 
 /* ---------------------  OTHER */
@@ -632,6 +633,7 @@ footer .fa:hover {
     .tour-page table {
         margin-left: auto;
         margin-right: auto;
+        width: 80%;
     }
 
 }
