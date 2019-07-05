@@ -2,40 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron|Barlow+Condensed|Exo|Halant|Roboto:100,200,300,400,500,600,700,800,900&display=swap');
 
-.white-font {
-    color: rgba(255, 255, 255, 1);
-
-}
-
-section, .main-title {
-    font-family: "Orbitron", "Barlow condensed", "Roboto", sans-serif;
-    color: rgba(255, 255, 255, 1);
-}
-
-h1, h2, h3, h4 {
-    letter-spacing: 2px;
-}
-
-.video-page h3 {
-    font-size: 1.3rem;
-}
-
-h4 {
-    font-size: 1.05rem;
-}
-
-.music-content h4, .music-content .btn {
-    font-size: 0.9rem;
-}
-
-.main-title { /* I want the title to fit in one line */
-    font-size: 1.3rem;
-}
-
-.tour-page section, .event-page section {
-    font-family: "Barlow condensed", "Roboto", sans-serif;
-}
-
 .navbar-dark .navbar-nav .nav-link {
     font-family: "Orbitron", "Barlow condensed", "Roboto", sans-serif;
     letter-spacing: 2px;
@@ -46,20 +12,68 @@ h4 {
     color: rgba(255, 255, 255, 1);
 }
 
+section, .main-title {
+    font-family: "Orbitron", "Barlow condensed", "Roboto", sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+.tour-page section, .event-page section {
+    font-family: "Barlow condensed", "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 2px;
+}
+
+.main-title { /* I want the title to fit in one line */
+    font-size: 1.3rem;
+}
+
+/* ---------------------  HOME PAGE */
+
 .promo-message {
     font-size: 1.6rem;
 }
 
+/* ---------------------  VIDEO PAGE */
+
+.video-page h3 {
+    font-size: 1.3rem;
+}
+
+/* ---------------------  Music PAGE */
+
+.music-content h4, .music-content .btn {
+    font-size: 0.9rem;
+}
+
+/* ---------------------  TOUR PAGE */
+
+.tour-page h4 {
+    font-size: 1.05rem;
+}
+
+/* ---------------------  OTHER */
+
+.white-font {
+    color: rgba(255, 255, 255, 1);
+
+}
+
 .message-alert {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.timeline-item p a {
+    color: #3c9aff;
 }
 
 .yellow-font {
     color: #ffd600;
 }
 
-/* ---------------------------------------- BACKGROUND IMAGE AND BACKGROUND SIZE*/
+/* ------------------------------------------------------ BACKGROUND IMAGE AND BACKGROUND SIZE*/
 
 .astronomy-bg {
     background: url("../images/astronomy.jpg") no-repeat center center fixed;
@@ -114,7 +128,7 @@ nav .btn {
     color: rgba(255,255,255, 1);
 }
 
-/* ---------------------------------------- HEADERS */
+/* ------------------------------------------------------ HEADERS */
 
 .navbar-dark .navbar-nav .nav-link.current { /* Current page highlighted The user will know which page he is in */
     color: rgba(255,255,255, 1);
@@ -142,7 +156,7 @@ nav .btn {
     left: 0;
 }
 
-/* ---------------------------------------- SECTION */
+/* ------------------------------------------------------ SECTION */
 
 /* Top of the page */
 .main-title {
@@ -157,7 +171,7 @@ nav .btn {
 /*  Block Divider Line */
 
 .block-divider {
-    height: 5px;
+    height: 3px;
     background-color: #f4f4f4;
     width: 35px;
     border: 0;
@@ -406,7 +420,11 @@ table .message-alert {
     position: absolute;
 }
 
-/* ---------------------------------------- FOOTER */
+.previous-events-table .btn {
+    visibility: hidden;
+}
+
+/* ------------------------------------------------------ FOOTER */
 
 footer {
     min-height: 53px;
@@ -420,7 +438,7 @@ footer {
     margin: 15px;
 }
 
-/* ---------------------------------------- ICON FONT AWESOME */
+/* ----------------------------------------------------- ICON FONT AWESOME */
 
 
 
@@ -461,7 +479,7 @@ footer .fa:hover {
     color: #1DB954;
 }
 
-/*---------------------- SHADOW EFFECTS ICON*/
+/* ------------------------------------------------------ SHADOW EFFECTS ICON*/
 
 /* Home Page promo */
 
@@ -475,7 +493,7 @@ footer .fa:hover {
     text-shadow: 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-/* ---------------------------------------- MEDIA QUERIES */
+/* ------------------------------------------------------ MEDIA QUERIES */
 
 @media (min-width: 338px) { /* I want the title to fit in one line */
 
@@ -484,14 +502,15 @@ footer .fa:hover {
     }
 }
 
-@media (max-width: 345px) { /* resized to fit srceen width for Iphone SE or under */
+/* ------------------------------------  Iphone SE or under */
+@media (max-width: 345px) {
 
     .music-page iframe { /* Spotify playlist */
         width: 100%;
     }
 }
 
-/* Small devices (landscape phones, 568px and up) */
+/* ------------------------------------ Small devices (landscape phones, 568px and up) */
 
 @media screen and (min-width: 568px) {
     /* ------------------ Video Page */
@@ -509,7 +528,7 @@ footer .fa:hover {
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* ------------------------------------ Medium devices (tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
 
@@ -552,6 +571,18 @@ footer .fa:hover {
     }
     
     /* ------------------ Tour Page */
+
+    .tour-page h4 {
+    font-size: 1.35rem;
+    }
+
+    .timeline-item p {
+    font-size: 1.1rem;
+    }
+
+    .tour-page .padding-left {
+        padding-left: 48px;
+    }
     
     
     /* ------------------ Event Page */
@@ -561,7 +592,7 @@ footer .fa:hover {
     }
 }
 
-/* Focus on landscape view of Iphone X and Pixel 2 XL or above */
+/* ------------------------------------ Focus on landscape view of Iphone X and Pixel 2 XL or above */
 
 @media screen and (min-width: 811px) and (max-height: 411px) and (orientation: landscape) {
     /* ------------------ HOME PAGE */
@@ -577,7 +608,8 @@ footer .fa:hover {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* ------------------------------------ Large devices (desktops, 992px and up) */
+
 @media screen and (min-width: 992px) {
     
     /* ------------------ HOME PAGE */
@@ -595,11 +627,16 @@ footer .fa:hover {
     padding-right: 0px;
     }
 
-    /* --------------------- Music PAGE */
-    
+    /* --------------------- TOUR PAGE */
+
+    .tour-page table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* ------------------------------------ Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
     
@@ -613,7 +650,9 @@ footer .fa:hover {
 
 }
 
-@media screen and (min-height: 1080px) { /* Ipad Pro height or other */
+/* ------------------------------------ Ipad Pro height or other */
+
+@media screen and (min-height: 1080px) {
     
     /* To fill the white part between content */
     
