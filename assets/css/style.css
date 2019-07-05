@@ -125,7 +125,7 @@ nav .btn {
 
 /* ---------------------------------------- HEADERS */
 
-.navbar-dark .navbar-nav .nav-link.current { /* The user will know which page he is in */
+.navbar-dark .navbar-nav .nav-link.current { /* Current page highlighted The user will know which page he is in */
     color: rgba(255,255,255, 1);
 }
 
@@ -247,16 +247,11 @@ nav .btn {
 
 /* Videos */
 
-/* To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." */
+/* To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." 
+Found this solution: https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead */
 
 .video-page iframe { 
     border: none; 
-}
-
-/* To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead." */
-
-.music-page iframe {
-    background-color: transparent;
 }
 
 /*  Space between content */
@@ -264,7 +259,7 @@ nav .btn {
     margin-top: 1.5rem;
 }
 
-/* I want a full width video */
+/* Full width video */
 
 .side-padding {
     padding-left: 0;
@@ -277,23 +272,30 @@ nav .btn {
 
 /* Carousel button */
 
-/* Need to reduce the width and height because the click to action was too big */
+/* Need to reduce the height of the click to action. It allows the user to click on other Youtube as play or full screen mode */
 
 .video-page .carousel-control-next, .video-page .carousel-control-prev {
+    height: 50px;
     top: 50%;
     bottom: 50%;
-    width: 7%;
 }
 
 /* --------------------- Music PAGE */
 
 /* To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead."
- Found this solution The equivalent of frameborder in css is border: 0px; */
+ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead */
 
  /* Target the spotify playlist */
 
  .music-page iframe { 
     border: none; 
+}
+
+/* To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead."
+Found this solution: https://stackoverflow.com/questions/3740700/there-is-no-attribute-allowtransparency */
+
+.music-page iframe {
+    background-color: transparent;
 }
 
 /* Column Audio Space */
@@ -324,9 +326,8 @@ nav .btn {
 
 .img-cover {
     height: 225px;
-    width: 224px;
-    /* Images was too bright */
-    opacity: .95;
+    width: 224px; 
+    opacity: .95; /* Images was too bright */
 }
 
 /* ---- Buttons */
