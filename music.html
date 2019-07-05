@@ -48,19 +48,20 @@
 
         <!-- SECTION -->
         <section>
-            <div class="container-fluid text-center">
+            <div class="container-fluid text-center music-content">
                 <!-- First Row Section -->
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12">
                         <!-- Title -->
-                        <h1 class="text-uppercase main-title"><i class="fa fa-music icon-title" aria-hidden="true"></i> Music</h1>
+                        <h1 class="text-uppercase main-title"><i class="fa fa-music icon-title" aria-hidden="true"></i> Music
+                        </h1>
                     </div>
                 </div>
                 <!-- Second Row Section -->
-                <div class="row music-content">
-                    <!-- First Column section-->
-                    <div class="col-12 col-sm-6 col-audio">
-                        <!-- Image -->
+                <div class="row justify-content-lg-center">
+                    <!-- Column section-->
+                    <div class="col-12 col-sm-6 col-lg-4 col-audio">
+                        <!-- Cover Image -->
                         <img src="assets/images/cover.jpg" alt="cover" title="cover" class="img-cover">
                         <h4>- Clarksville -</h4>
                         <!-- Audio -->
@@ -75,9 +76,9 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Second Column section-->
-                    <div class="col-12 col-sm-6 col-audio">
-                        <!-- Image -->
+                    <!-- Column section-->
+                    <div class="col-12 col-sm-6 col-lg-4 col-audio">
+                        <!-- Cover 2 Image -->
                         <img src="assets/images/cover2.png" alt="cover 2" title="cover 2" class="img-cover cover-space">
                         <h4>- Day Dream Believer -</h4>
                         <!-- Audio -->
@@ -92,12 +93,9 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <!-- Third Row Section -->
-                <div class="row music-content">
-                    <!-- First Column section-->
-                    <div class="col-12 col-sm-6 col-audio">
-                        <!-- Image -->
+                    <!-- Column section-->
+                    <div class="col-12 col-sm-6 col-lg-4 col-audio">
+                        <!-- Cover 3 Image -->
                         <img src="assets/images/cover3.jpg" alt="cover 3" title="cover 3" class="img-cover cover-space">
                         <h4>- Im A Believer -</h4>
                         <audio controls class="music-player">
@@ -112,9 +110,9 @@
                             </button>
                         </div>
                     </div>
-                    <!-- Second Column section-->
-                    <div class="col-12 col-sm-6 col-audio">
-                        <!-- Image -->
+                    <!-- Column section-->
+                    <div class="col-12 col-sm-6 col-lg-4 col-audio">
+                        <!-- Cover 4 Image -->
                         <img src="assets/images/cover1.jpg" alt="cover 4" title="cover 4" class="img-cover cover-space">
                         <h4>- Stepping Stone -</h4>
                         <!-- Audio -->
@@ -129,16 +127,17 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <!-- Fourth Row Section -->
-                <!-- Playlist Album -->
-                <div class="row music-content">
-                    <div class="col">
+                    <!-- Playlist Album -->
+                    <div class="col-12 col-lg-4">
                         <img src="assets/images/album.jpg" alt="album image" title="album image" class="img-cover cover-space">
-                        <h4>New Album<span class="d-block">- Below -</span></h4>
+                        <h4>Full Album on Spotify<span class="d-block d-lg-none">- Below -</span></h4>
                         <!-- Spotify Playlist -->
-                        <iframe class="spotify-width margin-bottom" 
-                        src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" height="380" allow="encrypted-media">
+                        <iframe class="spotify-width margin-bottom d-lg-none"
+                            src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" height="380"
+                            allow="encrypted-media">
+                        </iframe>
+                        <iframe class="d-none d-lg-inline-block margin-bottom"
+                            src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" width="300" height="80" allow="encrypted-media">
                         </iframe>
                     </div>
                 </div>

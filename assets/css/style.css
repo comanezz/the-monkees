@@ -24,6 +24,10 @@ h4 {
     font-size: 1.05rem;
 }
 
+.music-content h4, .music-content .btn {
+    font-size: 0.9rem;
+}
+
 .main-title { /* I want the title to fit in one line */
     font-size: 1.3rem;
 }
@@ -57,21 +61,7 @@ h4 {
 
 /* ---------------------------------------- BACKGROUND IMAGE AND BACKGROUND SIZE*/
 
-/* .black-bg {
-    background-color: #282828;
-} */
-
-.dark-bg {
-    /* Found how to darker the bg-img through this link https://stackoverflow.com/questions/26621513/darken-css-background-image */
-    /* background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/dark-background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-}
-
 .astronomy-bg {
-    /* Found how to darker the bg-img through this link https://stackoverflow.com/questions/26621513/darken-css-background-image */
     background: url("../images/astronomy.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -79,6 +69,7 @@ h4 {
     background-size: cover;
 }
 
+/* To size the logo and appears bigger than the navbar */
 .logo img {
     position: absolute;
     height: 65px;
@@ -285,16 +276,12 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
 /* To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead."
  Found this solution: https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead */
 
- /* Target the spotify playlist */
+ .music-page iframe { /* Target the spotify playlist */
+    border: none;
 
- .music-page iframe { 
-    border: none; 
-}
+    /* To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead."
+    Found this solution: https://stackoverflow.com/questions/3740700/there-is-no-attribute-allowtransparency */
 
-/* To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead."
-Found this solution: https://stackoverflow.com/questions/3740700/there-is-no-attribute-allowtransparency */
-
-.music-page iframe {
     background-color: transparent;
 }
 
@@ -316,8 +303,8 @@ Found this solution: https://stackoverflow.com/questions/3740700/there-is-no-att
 /* Size and Space */
 
 .music-player {
-    margin-top: 15px;
     height: 35px;
+    width: 255px;
 }
 
 /* Images in music */
@@ -335,7 +322,7 @@ Found this solution: https://stackoverflow.com/questions/3740700/there-is-no-att
 /* Space between content and Style */
 
 .music-content .btn{
-    margin-top: 15px;
+    margin-top: 5px;
     border-radius: 25px;
 }
 
@@ -500,11 +487,7 @@ footer .fa:hover {
 
 @media (max-width: 345px) { /* resized to fit srceen width for Iphone SE or under */
 
-    .music-player {
-        width: 100%;
-    }
-
-    .music-page iframe {
+    .music-page iframe { /* Spotify playlist */
         width: 100%;
     }
 }
@@ -518,13 +501,9 @@ footer .fa:hover {
         margin-bottom: 106px;
     }
 
-    .music-page h4, .music-content .btn {
-        font-size: 0.9rem;
-    }
-
     /* ------------------ Music Page */
     
-    /* Event Page */
+    /* ------------------ Event Page */
     
     .jumbotron {
     padding: 3rem 2rem; /* better looking with less space */
@@ -617,8 +596,10 @@ footer .fa:hover {
     padding-right: 0px;
     }
 
-    /* ------------------ MUSIC Page */
-
+    /* --------------------- Music PAGE */
+    .music-page {
+        height: 100vh;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
