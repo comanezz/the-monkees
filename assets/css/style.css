@@ -57,25 +57,22 @@ h4 {
 
 /* ---------------------------------------- BACKGROUND IMAGE AND BACKGROUND SIZE*/
 
-/*.monkees-bg {*/
-/*    background: url("../images/monkees-together.gif");*/
-/*    -webkit-background-size: cover;*/
-/*    -moz-background-size: cover;*/
-/*    -o-background-size: cover;*/
-/*    background-size: cover;*/
-/*    background-position: center 26%;*/
-/*    background-repeat: no-repeat;*/
-/*    height: 300px;*/
-/*    position: relative;*/
-/*}*/
-
-.black-bg {
+/* .black-bg {
     background-color: #282828;
-}
+} */
 
 .dark-bg {
     /* Found how to darker the bg-img through this link https://stackoverflow.com/questions/26621513/darken-css-background-image */
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/dark-background.jpg") no-repeat center center fixed;
+    /* background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/dark-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+.astronomy-bg {
+    /* Found how to darker the bg-img through this link https://stackoverflow.com/questions/26621513/darken-css-background-image */
+    background: url("../images/astronomy-dark-evening.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -90,7 +87,7 @@ h4 {
 }
 
 .home-page, .video-page, .music-page, .tour-page, .event-page {
-    padding-top: 58px; /* better using padding than margin because there is no scroll effect for medium devices and up */
+    padding-top: 54px; /* better using padding than margin because there is no scroll effect for medium devices and up */
     overflow: auto;
 }
 
@@ -127,6 +124,10 @@ nav .btn {
 }
 
 /* ---------------------------------------- HEADERS */
+
+.navbar {
+    height: 54px;
+}
 
 .navbar-dark .navbar-nav .nav-link.current { /* The user will know which page he is in */
     color: rgba(255,255,255, 1);
@@ -218,7 +219,7 @@ nav .btn {
 .promo {
     height: 90px;
     width: 100%;
-    background: #00000052;
+    background: #343a40;
 }
 
 .promo:hover {
@@ -250,6 +251,18 @@ nav .btn {
 
 /* Videos */
 
+/* To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." */
+
+.video-page iframe { 
+    border: none; 
+}
+
+/* To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead." */
+
+.music-page iframe {
+    background-color: transparent;
+}
+
 /*  Space between content */
 .video-page .carousel {
     margin-top: 1.5rem;
@@ -277,6 +290,15 @@ nav .btn {
 }
 
 /* --------------------- Music PAGE */
+
+/* To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead."
+ Found this solution The equivalent of frameborder in css is border: 0px; */
+
+ /* Target the spotify playlist */
+
+ .music-page iframe { 
+    border: none; 
+}
 
 /* Column Audio Space */
 
@@ -610,7 +632,7 @@ footer .fa:hover {
     /* ------------------ HOME PAGE */
 
     .carousel-item img {
-    height: 60vh;
+    /* height: 60vh; */
     }
 
     .promo-message {
