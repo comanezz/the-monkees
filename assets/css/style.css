@@ -125,10 +125,6 @@ nav .btn {
 
 /* ---------------------------------------- HEADERS */
 
-.navbar {
-    height: 54px;
-}
-
 .navbar-dark .navbar-nav .nav-link.current { /* The user will know which page he is in */
     color: rgba(255,255,255, 1);
 }
