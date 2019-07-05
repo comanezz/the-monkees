@@ -79,11 +79,11 @@ h4 {
 
 .home-page, .video-page, .music-page, .tour-page, .event-page {
     padding-top: 54px; /* better using padding than margin because there is no scroll effect for medium devices and up */
-    overflow: auto;
 }
 
 .video-page {
     height: 100vh;
+    overflow: auto;
 }
 
 /* ---------------------------------------- BUTTONS */
@@ -300,11 +300,10 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
 
 /* ---- Audio Player */
 
-/* Size and Space */
+/* Size */
 
 .music-player {
     height: 35px;
-    width: 255px;
 }
 
 /* Images in music */
@@ -597,9 +596,7 @@ footer .fa:hover {
     }
 
     /* --------------------- Music PAGE */
-    .music-page {
-        height: 100vh;
-    }
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -616,12 +613,20 @@ footer .fa:hover {
 
 }
 
-@media screen and (min-height: 1080px) { /* To fill the white part between content */
+@media screen and (min-height: 1080px) { /* Ipad Pro height or other */
+    
+    /* To fill the white part between content */
     
     /* Video page */
 
     .video-page .carousel, .event-page .jumbotron {
         margin-top: 50px;
+    }
+
+    /* Music Page */
+
+    .music-page {
+        height: 100vh;
     }
 
     /* Event page */
