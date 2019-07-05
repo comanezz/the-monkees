@@ -314,15 +314,18 @@ nav .btn {
 }
 
 /* ---- Audio Player */
+
 /* Size and Space */
+
 .music-player {
-    width: 85%;
     margin-top: 15px;
     height: 35px;
 }
 
 /* Images in music */
+
 /* All the img */
+
 .img-cover {
     height: 225px;
     width: 224px;
@@ -331,6 +334,7 @@ nav .btn {
 }
 
 /* ---- Buttons */
+
 /* Space between content and Style */
 
 .music-content .btn{
@@ -499,6 +503,10 @@ footer .fa:hover {
 
 @media (max-width: 345px) { /* resized to fit srceen width for Iphone SE or under */
 
+    .music-player {
+        width: 100%;
+    }
+
     .music-page iframe {
         width: 100%;
     }
@@ -518,10 +526,6 @@ footer .fa:hover {
     }
 
     /* ------------------ Music Page */
-
-    .music-player { /* Allow user to be able to use the foward and backward button */
-        width: 100%;
-    }
     
     /* Event Page */
     
@@ -618,11 +622,6 @@ footer .fa:hover {
 
     /* ------------------ MUSIC Page */
 
-    /* ---- Audio Player */
-    /* Size */
-    .music-player {
-    width: 75%;
-    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -631,13 +630,11 @@ footer .fa:hover {
     
     /* ------------------ HOME PAGE */
 
-    .carousel-item img {
-    /* height: 60vh; */
-    }
-
     .promo-message {
         padding-right: 20px;
     }
+
+    /* ------------------ Music PAGE */
 
 }
 
