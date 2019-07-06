@@ -29,32 +29,32 @@ h1, h2, h3, h4 {
     font-size: 1.3rem;
 }
 
-/* ---------------------  HOME PAGE */
+/* --------------------------------------  HOME PAGE */
 
 .promo-message {
     font-size: 1.6rem;
 }
 
-/* ---------------------  VIDEO PAGE */
+/* --------------------------------------  VIDEO PAGE */
 
 .video-page h3 {
     font-size: 1.3rem;
 }
 
-/* ---------------------  Music PAGE */
+/* --------------------------------------  Music PAGE */
 
 .music-content h4, .music-content .btn {
     font-size: 0.9rem;
 }
 
-/* ---------------------  TOUR PAGE */
+/* --------------------------------------  TOUR PAGE */
 
 .tour-page h4 {
     font-size: 1.05rem;
     font-weight: 600;
 }
 
-/* ---------------------  OTHER */
+/* --------------------------------------  OTHER */
 
 .white-font {
     color: rgba(255, 255, 255, 1);
@@ -98,6 +98,7 @@ h1, h2, h3, h4 {
 
 .home-page { /* Cover the white space at the bottom of the page on Iphone X */
     overflow: auto;
+    height: 100vh;
 }
 
 .video-page {
@@ -122,7 +123,7 @@ nav .btn {
     font-weight: 600;
 }
 
-/*  PAGES BUTTONS */
+/*  BUTTONS in the Section part*/
 
 .btn-font {
     color: rgba(255,255,255,.75);
@@ -139,7 +140,7 @@ nav .btn {
     color: rgba(255,255,255, 1);
 }
 
-/* Hover underline added to have a better UX. */
+/* Hover underline added to have a better UX. This link show us how to do it https://codepen.io/jstn/pen/zuDst */
 
 .underline-hover>a {
     position: relative; /* position changed for the underline position */
@@ -182,14 +183,16 @@ nav .btn {
     border: 0;
 }
 
-/* ---------------------  HOME PAGE */
+/* --------------------------------------  HOME PAGE */
 
 /* Carousel */
 .carousel-item img {
     height: 220px;
 }
 
-/* Changed the arrows and indicators color and form */
+/* Changed the arrows and indicators color and form 
+This link show us how to do it https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel */
+
 .carousel-indicators li {
     opacity: 1;
 }
@@ -253,7 +256,7 @@ nav .btn {
     color: inherit;
 }
 
-/* ---------------------  VIDEO PAGE */
+/* --------------------------------------  VIDEO PAGE */
 
 /* Videos */
 
@@ -290,7 +293,7 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
     bottom: 50%;
 }
 
-/* --------------------- Music PAGE */
+/* -------------------------------------- Music PAGE */
 
 /* To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead."
  Found this solution: https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead */
@@ -378,7 +381,7 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
 .close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
     opacity: 1;
 }
-/* --------------------- Tour PAGE */
+/* -------------------------------------- Tour PAGE */
 
 .timeline-item p {
     margin: 0;
@@ -506,6 +509,8 @@ footer .fa:hover {
 
 @media (min-width: 338px) { /* I want the title to fit in one line */
 
+    /* -------------------- HOME PAGE */
+
     .main-title {
     font-size: 1.6rem;
     }
@@ -527,8 +532,6 @@ footer .fa:hover {
     .video-page .carousel {
         margin-bottom: 106px;
     }
-
-    /* ------------------ Music Page */
     
     /* ------------------ Event Page */
     
@@ -551,10 +554,6 @@ footer .fa:hover {
     }
 
     /* ------------------ Home Page */
-
-    .home-page {
-        height: 100vh;
-    }
 
     /* Carousel */
     
@@ -650,8 +649,6 @@ footer .fa:hover {
     .promo-message {
         padding-right: 20px;
     }
-
-    /* ------------------ Music PAGE */
 
 }
 
