@@ -96,6 +96,10 @@ h1, h2, h3, h4 {
     padding-top: 54px; /* better using padding than margin because there is no scroll effect for medium devices and up */
 }
 
+.home-page { /* Cover the white space at the bottom of the page on Iphone X */
+    overflow: auto;
+}
+
 .video-page {
     height: 100vh;
     overflow: auto;
@@ -215,7 +219,7 @@ nav .btn {
 /* Click to action button promo */
 
 .promo-container {
-    margin-bottom: 52px;
+    margin-bottom: 53px;
 }
 
 .promo {
@@ -436,7 +440,7 @@ footer {
 /* SOCIAL ICON space between them*/
 
 .social-icon {
-    margin: 15px;
+    margin: 10px 0;
 }
 
 /* ----------------------------------------------------- ICON FONT AWESOME */
@@ -596,11 +600,6 @@ footer .fa:hover {
 /* ------------------------------------ Focus on landscape view of Iphone X and Pixel 2 XL or above */
 
 @media screen and (min-width: 811px) and (max-height: 411px) and (orientation: landscape) {
-    /* ------------------ HOME PAGE */
-
-    .promo-container {
-        margin-bottom: 0px;
-    }
 
     /* ------------------ VIDEO PAGE */
     
