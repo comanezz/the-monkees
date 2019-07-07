@@ -274,13 +274,14 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
 
 /* Full width video */
 
-.side-padding {
-    padding-left: 0;
-    padding-right: 0;
+.video-container {
+    padding-bottom: 52%;
 }
 
-.video-page iframe {
-    height: 215px;
+.video-container iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 /* Carousel button */
@@ -381,6 +382,7 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
 .close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
     opacity: 1;
 }
+
 /* -------------------------------------- Tour PAGE */
 
 .timeline-item p {
@@ -558,24 +560,13 @@ footer .fa:hover {
     /* Carousel */
     
     .carousel-item img {
-    height: 50vh;
+    height: 60vh;
     }
     
     /* ------------------ Video Page */
     
     .video-page h3 {
         font-size: 1.75rem;
-    }
-
-    /* Videos */
-    
-    .side-padding {
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-    
-    .video-page iframe {
-    height: 460px;
     }
     
     /* ------------------ Tour Page */
@@ -600,35 +591,24 @@ footer .fa:hover {
     }
 }
 
-/* ------------------------------------ Focus on landscape view of Iphone X and Pixel 2 XL or above */
-
-@media screen and (min-width: 811px) and (max-height: 411px) and (orientation: landscape) {
-
-    /* ------------------ VIDEO PAGE */
-    
-    .video-page iframe {
-        height: 230px;
-    }
-}
-
 /* ------------------------------------ Large devices (desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
     
     /* ------------------ HOME PAGE */
-
+    
+    /* Carousel */
+    
+    .carousel-item img {
+    height: 70vh;
+    }
+    
     .promo-message {
         font-size: 1.2rem;
         padding-right: 15px;
     }
     
     /* ------------------ VIDEO PAGE */
-    
-    /* Carousel video */
-    .side-padding {
-    padding-left: 0px;
-    padding-right: 0px;
-    }
 
     /* --------------------- TOUR PAGE */
 
