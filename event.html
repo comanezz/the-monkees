@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>The Monkees</title>
+    <title>The Monkees / Book an Event</title>
 </head>
 
 <body>
@@ -18,7 +18,9 @@
         <header>
             <!-- LOGO -->
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-                <a class="navbar-brand logo mr-0 p-0" href="index.html"><img src="assets/images/logo.png" alt="The Monkees logo" title = "The Monkees logo" height="42" width="70"></a>
+                <a class="navbar-brand logo mr-0 p-0" href="index.html">
+                    <img src="assets/images/logo.png" alt="The Monkees logo" title="The Monkees logo" height="42" width="70">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -50,18 +52,17 @@
         <!-- SECTION -->
         <section>
             <div class="container-fluid">
-                <!-- First Row Section -->
                 <div class="row text-center">
                     <div class="col-12">
                         <!-- Title -->
                         <h1 class="text-uppercase main-title"><i class="fa fa-calendar icon-title" aria-hidden="true"></i> Book An Event</h1>
                     </div>
                 </div>
-                <!-- Second Row Section -->
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-10 col-md-9 col-lg-7 col-xl-5">
                         <h2 class="text-center">We can perform at your Event</h2>
-                        <p class="text-center">Fill the form if you want to see us playing in your event. We will get back to you as soon as possible.
+                        <p class="text-center">
+                            Fill the form if you want to see us playing in your event. We will get back to you as soon as possible.
                         </p>
                         <!-- Contact Form -->
                         <div class="jumbotron margin-bottom bg-secondary">
@@ -151,7 +152,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputCity">City</label>
-                                        <input type="text" class="form-control" id="inputCity" placeholder="Enter City">
+                                        <input type="text" class="form-control" id="inputCity" placeholder="Enter City" required>
                                     </div>
                                     <!-- State -->
                                     <div class="form-group col-md-6">
@@ -173,7 +174,9 @@
                                     <button type="submit" class="btn btn-info btn-lg btn-font">Send</button>
                                 </div>
                                 <!-- Message Alert -->
-                                <p class="message-alert text-center">*This functionality is not working yet</p>
+                                <p class="message-alert text-center">
+                                    *This functionality is not working yet
+                                </p>
                             </form>
                         </div>
                     </div>
@@ -188,26 +191,29 @@
                 <!-- SOCIAL ICONS -->
                 <div class="col-7 col-md-6 col-lg-5 col-xl-4 d-flex justify-content-around">
                     <!-- Facebook Icon -->
-                    <a class="social-icon" href="https://www.facebook.com/TheMonkees/" target="_blank" aria-label="Find us on Facebook"><i
-                        class="fa fa-facebook-square fa-2x icon-shadow" aria-hidden="true"></i></a>
-                        <!-- Twitter Icon -->
-                    <a class="social-icon" href="https://twitter.com/themonkees?lang=en" target="_blank" aria-label="Find us on Twitter"><i
-                        class="fa fa-twitter fa-2x icon-shadow" aria-hidden="true"></i></a>
-                        <!-- Youtube Icon -->
-                    <a class="social-icon" href="https://www.youtube.com/user/themonkees" target="_blank" aria-label="Find us on Youtube"><i
-                        class="fa fa-youtube fa-2x icon-shadow" aria-hidden="true"></i></a>
-                        <!-- Spotify Icon -->
-                    <a class="social-icon" href="https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck" target="_blank" aria-label="Find us on Spotify"><i
-                        class="fa fa-spotify fa-2x icon-shadow" aria-hidden="true"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/TheMonkees/" target="_blank" aria-label="Find us on Facebook">
+                        <i class="fa fa-facebook-square fa-2x icon-shadow" aria-hidden="true"></i>
+                    </a>
+                    <!-- Twitter Icon -->
+                    <a class="social-icon" href="https://twitter.com/themonkees?lang=en" target="_blank" aria-label="Find us on Twitter">
+                        <i class="fa fa-twitter fa-2x icon-shadow" aria-hidden="true"></i>
+                    </a>
+                    <!-- Youtube Icon -->
+                    <a class="social-icon" href="https://www.youtube.com/user/themonkees" target="_blank" aria-label="Find us on Youtube">
+                        <i class="fa fa-youtube fa-2x icon-shadow" aria-hidden="true"></i>
+                    </a>
+                    <!-- Spotify Icon -->
+                    <a class="social-icon" href="https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck" target="_blank" aria-label="Find us on Spotify">
+                        <i class="fa fa-spotify fa-2x icon-shadow" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </footer>
-        <!-- /FOOTER -->
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
