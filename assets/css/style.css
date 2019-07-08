@@ -275,7 +275,8 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
 /* Full width video */
 
 .video-container {
-    padding-bottom: 52%;
+    position: relative;
+    padding-bottom: 45%;
 }
 
 .video-container iframe {
