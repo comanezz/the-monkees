@@ -267,11 +267,6 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
     border: none; 
 }
 
-/*  Space between content */
-.video-page .carousel {
-    margin-top: 1.5rem;
-}
-
 /* Full width video */
 
 .video-container {
@@ -283,16 +278,6 @@ Found this solution: https://stackoverflow.com/questions/26274082/the-frameborde
     position: absolute;
     height: 100%;
     width: 100%;
-}
-
-/* Carousel button */
-
-/* Need to reduce the height of the click to action. It allows the user to click on other Youtube as play or full screen mode */
-
-.video-page .carousel-control-next, .video-page .carousel-control-prev {
-    height: 50px;
-    top: 50%;
-    bottom: 50%;
 }
 
 /* -------------------------------------- Music PAGE */
@@ -530,11 +515,6 @@ footer .fa:hover {
 /* ------------------------------------ Small devices (landscape phones, 568px and up) */
 
 @media screen and (min-width: 568px) {
-    /* ------------------ Video Page */
-
-    .video-page .carousel {
-        margin-bottom: 106px;
-    }
     
     /* ------------------ Event Page */
     
@@ -638,10 +618,8 @@ footer .fa:hover {
 @media screen and (min-height: 1080px) {
     
     /* To fill the white part between content */
-    
-    /* Video page */
 
-    .video-page .carousel, .event-page .jumbotron {
+    .event-page .jumbotron {
         margin-top: 50px;
     }
 
