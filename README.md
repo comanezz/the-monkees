@@ -21,17 +21,6 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
-- Bootstrap4 
-- JQuery 
-- Popper.js 
-- Google Fonts
-- Visual Studio Code find better to use than AWS Cloud9
-- https://convertico.com/ Used it to convert my image.png to image.ico
-- https://www.color-hex.com/color-palette/22941 Used to find the correct color of the social Icon
-- https://codepen.io/jstn/pen/zuDst Used this link to learn how to how to add an animated underline hover
-- https://jigsaw.w3.org/css-validator/validator Used to check the css syntax
-- https://validator.w3.org/nu/#textarea Used to check the HTML syntax
-- https://fontawesome.com/v4.7.0/ Used this version of font awesome to get icons -
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -48,8 +37,20 @@ In addition, you may also use this section to discuss plans for additional featu
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- HTML5
+- CSS3
+- [Bootstrap Framework](https://getbootstrap.com/)
+  - The project uses **Bootstrap4** to simplify the structure of the website and to build a responsive website .
+- [Font Awesome 4.7](https://fontawesome.com/v4.7.0/)
+    - The project uses **Font Awesome** to provide icons.
+- [Google Fonts](https://fonts.google.com/)
+  - The project uses **Google Fonts** to style the website fonts.
+- **Javascript libraries** used for the responsive navbar, carousel and modal.
+    - [Popper.js](https://popper.js.org/)
+    - [JQuery](https://jquery.com)
+- **IDE** used to develop the website: writting, debugging and running the code.
+  - [Cloud9 IDE](https://aws.amazon.com/cloud9/?origin=c9io)
+  - [Visual Studio Code](https://code.visualstudio.com/)
 
 
 ## Testing
@@ -74,24 +75,49 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+**This website is hosted using GitHub pages, the deployment steps were:**
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+1. Log into GitHub.
+2. Navigate to my GitHub Pages site's repository: **the_monkees**.
+3. Under the repository name, **click Settings**.
+4. Scroll down to the GitHub Pages section.
+5. Under Source click the drop-down button named None and select Master Branch.
+6. The page is automatically refreshed, the website is now deployed.
+7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page is named index.html.
 
+**To run locally, you can clone this repository directly into the editor of your choice by following these steps:**
+
+1. On GitHub, navigate to the main page of the repository.
+2. Under the repository name, click **Clone or download**.
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+4. Open the terminal.
+5. Type `git clone`, and then paste the URL you copied in Step 3.
+``` console
+$ git clone https://github.com/USERNAME/REPOSITORY
+```
+6.Press **Enter**. Your local clone will be created.
+
+To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+- All the lyrics for the Music page were taken from [Genius.com](https://genius.com/) and [Azlyrics.com](https://search.azlyrics.com/)
+- The dates and locations for the Tour page were taken from [Songkick.com](https://www.songkick.com/artists/485568-monkees/gigography) and [viagogo.ie](https://www.viagogo.ie/Concert-Tickets/Rock-and-Pop/The-Monkees-Tickets)
+- The text for the Book Event page was written by me.
 
 ### Media
-- The photos used in this site were obtained from ...
+
+- The logo was taken from Google Images.
+- Some photos were taken from [Pexels](https://www.pexels.com/), and some were taken from Google Images.
+- Some videos were taken from [Youtube](https://www.youtube.com/results?search_query=themonkees).
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from:
+  - [ACDC](https://www.acdc.com/) for the home page and [Rolling Stones](https://www.rollingstones.com/live/) for the underline hover in the navbar. 
+
+**This is for educational use.**
