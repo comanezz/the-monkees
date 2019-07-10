@@ -1,25 +1,39 @@
 # The Monkees
 
-One or two paragraphs providing an overview of your project.
+Milestone Project 1: User-Centric Frontend Development - Code Institute
 
-Essentially, this part is your sales pitch.
- 
+This is a website is for the fans of the famous rock band "The Monkees". It allows them to watch their videos, listen to their musics, check out their tour dates and the possibility to contact the band to perfom to their party (chrismas party, birthday or Wedding).
+
+## **Demo**
+
+A live demo can be found [here](https://comanezz.github.io/the_monkees/index.html).
+
 ## UX
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+**The primary target audiences are their fans or people who already know the rock band.** 
+
+#### User Stories:
+
 - As a user type, I want to perform an action, so that I can achieve a goal.
 - As a new visitor, I want to see what the site show
 - As a fan I want to hear music or watch videos of The Monkees
 - As a fan or client I want to book an event (party, weddings, christmas)
-- As a fan or client I want to check the tour
+- As a fan I want to check out the tour dates
+- As a fan I want to buy a ticket for a tour
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+#### This project is the best way to achieve these things because:
+
+- This website is easy to navigate
+- There is no overloading information
+
+##### Wireframes
+
+- [Mobile view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/balsamic-mobile-monkees.pdf)
+- [Desktop view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/desktop-wireframe-monkees%20(1).pdf)
 
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 Each page has a responsive **navbar** with a highlighted button **"Book an event"**  (right side) to catch the eye of the user. 
 The **logo** (top left) is bigger than the navbar.
@@ -34,14 +48,14 @@ Each rectangle includes an image and a title which are clickable. The user has m
 
 **Videos**
 
-The Video page features 3 embed **Youtube** video.
+The Video page features 3 embed Youtube video.
 
 **Music**
 
 The Music page features:
  - 4 images cover
  - 3 lyrics button
- - 1 **Spotify** player. 
+ - 1 Spotify player. 
 
  The images are used above the audio player and the lyrics buttons. Each audio has a different song which is related to the image and the lyrics. 
 
@@ -64,7 +78,7 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Underline bar when we hover the nav button
+- I would like to make the form working being able to receive the information sent by the customer. 
 
 ## Technologies Used
 
