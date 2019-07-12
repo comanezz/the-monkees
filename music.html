@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="music-page astronomy-bg">
+    <div class="astronomy-bg" id="music-page">
         <!-- LOGO AND NAVBAR -->
         <header>
             <!-- LOGO -->
@@ -54,7 +54,7 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- Title -->
-                        <h1 class="text-uppercase main-title"><i class="fa fa-music icon-title" aria-hidden="true"></i> Music
+                        <h1 class="text-uppercase" id="main-title"><i class="fa fa-music icon-title" aria-hidden="true"></i> Music
                         </h1>
                     </div>
                 </div>
@@ -139,9 +139,9 @@
                         <img src="assets/images/album.jpg" alt="album image" title="album image" class="img-cover cover-space">
                         <h4>Full Album on Spotify</h4>
                         <!-- Spotify Playlist -->
-                        <iframe class="spotify-width margin-bottom d-lg-none" src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" height="380" allow="encrypted-media">
+                        <iframe class="spotify-width last-content d-lg-none" src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" height="380" allow="encrypted-media">
                         </iframe>
-                        <iframe class="d-none d-lg-inline-block margin-bottom" src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" width="300" height="80" allow="encrypted-media">
+                        <iframe class="d-none d-lg-inline-block last-content" src="https://open.spotify.com/embed/album/618fk3ITH2nXQtT0nTTZ84" width="300" height="80" allow="encrypted-media">
                         </iframe>
                     </div>
                 </div>
@@ -173,19 +173,19 @@
             </div>
         </footer>
 
-        <!-- Modals -->
+        <!-- Lyrics Pop up -->
         <!-- First Modal -->
         <div class="modal fade" id="clarksville" tabindex="-1" role="dialog" aria-label="clarksville-lyrics">
             <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
-                    <div class="modal-header white-font no-bottom-border bg-dark">
+                    <div class="modal-header no-bottom-border bg-dark">
                         <h5 class="modal-title">"Clarksville"</h5>
-                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <!-- Lyrics Part -->
-                    <div class="modal-body white-font text-center dark-bg">
+                    <div class="modal-body text-center astronomy-bg">
                         <p>{Intro}<br>
                             <br> {verse}
                             <br> Take the last train to Clarksville<br> And I'll meet you at the station<br> You can be here by four thirty
@@ -214,14 +214,14 @@
         <div class="modal fade" id="daydreambeliever" tabindex="-1" role="dialog" aria-label="day-dream-believer-lyrics">
             <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
-                    <div class="modal-header white-font no-bottom-border bg-dark">
+                    <div class="modal-header no-bottom-border bg-dark">
                         <h5 class="modal-title">"Day Dream Believer"</h5>
-                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <!-- Lyrics Part -->
-                    <div class="modal-body white-font text-center dark-bg">
+                    <div class="modal-body text-center astronomy-bg">
                         <p>
                             Oh, I could hide 'neath the wings<br> Of the bluebird as she sings<br> The six o'clock alarm would never ring
                             <br> But it rings and I rise<br> Wipe the sleep out of my eyes<br> My shavin' razor's cold and it stings<br>
@@ -241,14 +241,14 @@
         <div class="modal fade" id="imabeliever" tabindex="-1" role="dialog" aria-label="Im-a-believer-lyrics">
             <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
-                    <div class="modal-header white-font no-bottom-border bg-dark">
+                    <div class="modal-header no-bottom-border bg-dark">
                         <h5 class="modal-title">"Im A Believer"</h5>
-                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <!-- Lyrics Part -->
-                    <div class="modal-body white-font text-center dark-bg">
+                    <div class="modal-body text-center astronomy-bg">
                         <p>
                             I thought love was only true in fairy tales<br> Meant for someone else but not for me.<br> Love was out to get me
                             <br> That's the way it seemed.<br> Disappointment haunted all my dreams.<br>
@@ -271,14 +271,14 @@
         <div class="modal fade" id="steppingstone" tabindex="-1" role="dialog" aria-label="stepping-stone-lyrics">
             <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
-                    <div class="modal-header white-font no-bottom-border bg-dark">
+                    <div class="modal-header no-bottom-border bg-dark">
                         <h5 class="modal-title">"Stepping Stone"</h5>
-                        <button type="button" class="close white-font" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <!-- Lyrics Part -->
-                    <div class="modal-body white-font text-center dark-bg">
+                    <div class="modal-body text-center astronomy-bg">
                         <p>
                             I I I I I'm not your stepping stone<br> I I I I I'm not your stepping stone<br>
                             <br> You're trying to make your mark in society<br> Using all the tricks that you used on me.<br> You're reading all those high fashion magazines<br> The clothes you're wearin' girl are causing public scenes.<br>
