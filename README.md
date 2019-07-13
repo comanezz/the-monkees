@@ -9,29 +9,33 @@ This is a website is for the fans of the famous rock band "The Monkees". It allo
 A live demo can be found [here](https://comanezz.github.io/the_monkees/index.html).
 
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 **The primary target audiences are their fans or people who already know the rock band.** 
 
 #### User Stories:
 
-- As a user type, I want to perform an action, so that I can achieve a goal.
-- As a new visitor, I want to see what the site show
-- As a fan I want to hear music or watch videos of The Monkees
-- As a fan or client I want to book an event (party, weddings, christmas)
-- As a fan I want to check out the tour dates
-- As a fan I want to buy a ticket for a tour
+- As a new visitor, I want to see what the site shows
+- As a user I want to hear musics and read the lyrics
+- As a user I want to watch videos of The Monkees
+- As a user I want to book an event (party, weddings, christmas)
+- As a user I want to check out the tour dates
+- As a user I want to buy a ticket for a tour
+- As a user I want to see their Youtube page
+- As a user I want to see their Spotify page
+- As a user I want to see their Twitter page
+- As a user I want to see their Facebook page
 
 #### This project is the best way to achieve these things because:
 
-- This website is easy to navigate
-- There is no overloading information
+- This website is easy to navigate.
+- There is no overloading information.
+- All the links redirect the user to the correct page.
 
 ##### Wireframes
 
 - [Mobile view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/balsamic-mobile-monkees.pdf)
 - [Desktop view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/desktop-wireframe-monkees%20(1).pdf)
+  - **Notice:** Change of mind the market place page and the full background video (Home page) has not been included in the website.
 
 ## Features
 
@@ -41,20 +45,20 @@ Each page has a footer with **Social Media Icons** linking to the social media p
 
 **Home**
 
-The Home page uses a carousel with 3 pictures switching alone or can be switch manually. 
+The Home page uses a carousel with 3 pictures switching automatically or can be switch manually. 
 There is no big title of the band's name on this page because we can clearly see written "The Monkees" on the logo and in the main pictures. 
 
-Each rectangle includes an image and a title which are clickable. The user has multiple choice to navigate in the website by selecting one of the clickable rectangle under the pictures.
+Each rectangle includes an image and a title which links the user to another page.
 
 **Videos**
 
-The Video page features 3 embed Youtube video.
+The Video page features 3 embedded Youtube videos.
 
 **Music**
 
 The Music page features:
  - 4 images cover
- - 3 lyrics button
+ - 3 lyrics buttons
  - 1 Spotify player. 
 
  The images are used above the audio player and the lyrics buttons. Each audio has a different song which is related to the image and the lyrics. 
@@ -62,23 +66,15 @@ The Music page features:
 
 **Tour**
 
-The Tour page features an image (representing the person who will perform in this next event), a table showing the date and location and 3 tickets button. A table has been used because it was the easiest way to align the ticket buttons besides the location content. 
+The Tour page features an image (representing the person who will perform in the next events). A table has been used because it was the easiest way to align the ticket buttons besides the location content and dates. 
 
 **Book an Event**
 
 The Book an Event page features a contact form requesting an email, type of event, date, location and additional information. 
 Bottom of the form there is a send button. 
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- Footer Social Icons.
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- I would like to make the form working being able to receive the information sent by the customer. 
+- I would like to make the form working. Being able to receive the information sent by the customer. 
 
 ## Technologies Used
 
@@ -100,40 +96,84 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Testing
 
-[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation Service](https://validator.w3.org/) has been used to check the validity of the website code.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation Service](https://validator.w3.org/) has been used to check the validity of the website code.
 
-- **As a fan I want to navigate to the website and see what I can find**
-  - The navbar stays always at the top of the page
-  - The user can navigate through the button in the nav. They work correctly
-  - The logo in the nav always bring back the user to the home.page if he clicks on it.
+- The website has been tested on several browsers (**Chrome, Safari, Firefox and Internet Explorer**). It has been tested by using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) to check the mobile view but also tested on a One Plus 5 and an Ipad.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+- The website is fully responsive and behave as expected.
+
+- The logo (in the navbar) always leads back the user to the Home page.
+
+- Every links in the navbar redirect the user to the appropriate page.
+
+- Current page stays highlighted will know which page he is in.
+
+- All the links in the navbar behave correctly when hovering (change color and underline appears 'expect for the event button'). 
+
+- All the social icons in the footer behave correctly when hovering (change color and scale).
+
+- Social media links in the footer will open a new tab using target="_blank".  
+
+### Home page
+- The carousel image (Home page) switch images automatically or manually.
+
+- The columns behave correctly.
+
+- The 4 links in the section part redirect the user to the appropriate page.
+
+### Videos page
+
+- All embedded youtube videos work correctly.
+
+- All embedded youtube videos are responsize. Height and width increase or decrease correctly.
+
+### Music page
+
+- The columns behave correctly.
+
+- The audio player works correctly, each audio player plays their appropriate songs.
+
+- All lyrics pop up works appears on the screen correctly. 
+
+- All lyrics pop up show their appropriate lyrics related to the song.
+
+- Spotify playlist works correctly. Not working if the user is located in India due to Spotify policy.
+
+- Hovering all the lyrics buttons behave correctly.
+
+### Tour page
+
+- The image is responsive. Height and width increase or decrease correctly.
+
+- The columns behave correctly. 
+
+- Every links redirect the user to the correct page by opening a new tab using target="_blank".
+
+- Every tickets buttons redirect the user to the correct page by opening a new tab using target="_blank".
+
+### Book an Event page
 
 1. Contact form:
     1. Go to the "Book an Event" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+    2. Try to submit the empty form and verify that an error message about the required fields appears.
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears.
+    4. Try to submit the form with a valid email address but no input addressed to city and state and verify that an error message about the required fields appears.
+    5. Try to submit the form with a valid email address and city but no input addressed to state and verify that an error message about the required fields appears.
+    6. Try to submit the form with all inputs valid and verify that no message appears.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Problems
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+- The background image on all pages was taking too much time to load (more than 1.2 s) because the file size was too big (5 mb). To correct this, I compressed the image to 270 ko by using [Compress JPEG](https://compressjpeg.com/). Now it loads faster (less than 200 ms).
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+- To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." Found this solution on [Stack overflow](https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead). `border: none;` has been added to my iframe in CSS. 
+
+- To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead." Found this solution on [Stack overflow](https://stackoverflow.com/questions/3740700/there-is-no-attribute-allowtransparency). `background-color: transparent;` has been added to my iframe in CSS.
 
 ## Deployment
 
 **This website is hosted using GitHub pages, the deployment steps were:**
 
-1. Log into GitHub.
-2. Navigate to my GitHub Pages site's repository: **the_monkees**.
-3. Under the repository name, **click Settings**.
-4. Scroll down to the GitHub Pages section.
-5. Under Source click the drop-down button named None and select Master Branch.
-6. The page is automatically refreshed, the website is now deployed.
-7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
-
-The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page is named index.html.
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
 **To run locally, you can clone this repository directly into the editor of your choice by following these steps:**
 
@@ -161,11 +201,12 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 - The logo was taken from Google Images.
 - Some photos were taken from [Pexels](https://www.pexels.com/), and some were taken from Google Images.
-- Some videos were taken from [Youtube](https://www.youtube.com/results?search_query=themonkees).
+- All videos were taken from [Youtube](https://www.youtube.com/results?search_query=themonkees).
+- All musics were taken from [Code Institute Org](https://github.com/Code-Institute-Org/project-assets/tree/master/stream-1/band-assets/audio).
 
 ### Acknowledgements
 
 - I received inspiration for this project from:
-  - [ACDC](https://www.acdc.com/) for the Home page and [Rolling Stones](https://www.rollingstones.com/live/) for the underline hover in the Navbar. 
+  - [ACDC](https://www.acdc.com/) for the Home page layout and [Rolling Stones](https://www.rollingstones.com/live/) for the underline hover in the Navbar. 
 
 **This is for educational use.**
