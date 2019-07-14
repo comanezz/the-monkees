@@ -169,12 +169,13 @@ Bottom of the form there is a send button.
 ### Problems
 
 - The background image on all pages was taking too much time to load (more than 1.2 s) because the file size was too big (5 mb). 
-  <br> **Solution:** I compressed the image to 270 ko by using [Compress JPEG](https://compressjpeg.com/). Now it loads faster (less than 200 ms).
+  <br> Solution: I compressed the image to 270 ko by using [Compress JPEG](https://compressjpeg.com/). Now it loads faster (less than 200 ms).
 
-- To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." 
-<br> Found this solution on [Stack overflow](https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead). `border: none;` has been added to my iframe in CSS. 
+- Error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." 
+<br> Solution found on [Stack overflow](https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead). `border: none;` has been added to my iframe in CSS. 
 
-- To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead." Found this solution on [Stack overflow](https://stackoverflow.com/questions/3740700/there-is-no-attribute-allowtransparency). `background-color: transparent;` has been added to my iframe in CSS.
+- Error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead."
+  <br> Solution found on [Stack overflow](https://stackoverflow.com/questions/3740700/there-is-no-attribute-allowtransparency). `background-color: transparent;` has been added to my iframe in CSS.
 
 ## Deployment
 
