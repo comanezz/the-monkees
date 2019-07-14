@@ -203,6 +203,7 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 - Some photos were taken from [Pexels](https://www.pexels.com/), and some were taken from Google Images.
 - All videos were taken from [Youtube](https://www.youtube.com/results?search_query=themonkees).
 - All musics were taken from [Code Institute Org](https://github.com/Code-Institute-Org/project-assets/tree/master/stream-1/band-assets/audio).
+- The spotify album playlist was taken from [Spotify](https://open.spotify.com/album/3WzJHiv489Wb9So4K7csLy).
 
 ### Acknowledgements
 
