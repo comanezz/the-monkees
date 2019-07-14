@@ -2,7 +2,7 @@
 
 Milestone Project 1: User-Centric Frontend Development - Code Institute
 
-This is a website is for the fans of the famous rock band "The Monkees". It allows them to watch their videos, listen to their musics, check out their tour dates and the possibility to contact the band to perfom to their party (chrismas party, birthday or Wedding).
+This is a website for the fans of the famous rock band "The Monkees". It allows them to watch their videos, listen to their musics, check out their tour dates and the possibility to contact the band to perfom to their party (chrismas party, birthday or Wedding).
 
 ## **Demo**
 
@@ -48,25 +48,26 @@ Each page has a footer with **Social Media Icons** linking to the social media p
 The Home page uses a carousel with 3 pictures switching automatically or can be switch manually. 
 There is no big title of the band's name on this page because we can clearly see written "The Monkees" on the logo and in the main pictures. 
 
-Each rectangle includes an image and a title which links the user to another page.
+Each rectangle includes an image and a title which redirect the user to another page of the website.
 
 **Videos**
 
-The Video page features 3 embedded Youtube videos.
+The Videos page features 3 embedded Youtube videos.
 
 **Music**
 
 The Music page features:
  - 4 images cover
+ - 3 Audio players
  - 3 lyrics buttons
  - 1 Spotify player. 
 
- The images are used above the audio player and the lyrics buttons. Each audio has a different song which is related to the image and the lyrics. 
+ Each image is used above the audio player and the lyrics button. Each audio player has a different song which is related to the image and the lyrics. 
 
 
 **Tour**
 
-The Tour page features an image (representing the person who will perform in the next events). A table has been used because it was the easiest way to align the ticket buttons besides the location content and dates. 
+The Tour page features an image (representing the person who will perform in the next events) and the location and dates of the incoming events or previous events. 
 
 **Book an Event**
 
@@ -81,7 +82,7 @@ Bottom of the form there is a send button.
 - **HTML5**
 - **CSS3**
 - [Bootstrap Framework](https://getbootstrap.com/)
-  - The project uses **Bootstrap4** to simplify the structure of the website and to build a responsive website .
+  - The project uses **Bootstrap4** to build a responsive website.
 - [Font Awesome 4.7](https://fontawesome.com/v4.7.0/)
     - The project uses **Font Awesome** to provide icons.
 - [Google Fonts](https://fonts.google.com/)
@@ -106,7 +107,7 @@ Bottom of the form there is a send button.
 
 - Every links in the navbar redirect the user to the appropriate page.
 
-- Current page stays highlighted will know which page he is in.
+- Current page stays highlighted, the user will know which page he is in.
 
 - All the links in the navbar behave correctly when hovering (change color and underline appears 'expect for the event button'). 
 
@@ -121,6 +122,8 @@ Bottom of the form there is a send button.
 
 - The 4 links in the section part redirect the user to the appropriate page.
 
+- Hovering all the links behave correctly.
+
 ### Videos page
 
 - All embedded youtube videos work correctly.
@@ -131,9 +134,9 @@ Bottom of the form there is a send button.
 
 - The columns behave correctly.
 
-- The audio player works correctly, each audio player plays their appropriate songs.
+- The audio players work correctly, each audio player plays their appropriate songs.
 
-- All lyrics pop up works appears on the screen correctly. 
+- All lyrics pop up appears on the screen correctly when clicking on the lyrics button. 
 
 - All lyrics pop up show their appropriate lyrics related to the song.
 
@@ -147,9 +150,11 @@ Bottom of the form there is a send button.
 
 - The columns behave correctly. 
 
-- Every links redirect the user to the correct page by opening a new tab using target="_blank".
+- Every location links redirect the user to the correct page by opening a new tab using target="_blank".
 
 - Every tickets buttons redirect the user to the correct page by opening a new tab using target="_blank".
+
+- Hovering all the links and tickets buttons behave correctly.
 
 ### Book an Event page
 
@@ -163,9 +168,11 @@ Bottom of the form there is a send button.
 
 ### Problems
 
-- The background image on all pages was taking too much time to load (more than 1.2 s) because the file size was too big (5 mb). To correct this, I compressed the image to 270 ko by using [Compress JPEG](https://compressjpeg.com/). Now it loads faster (less than 200 ms).
+- The background image on all pages was taking too much time to load (more than 1.2 s) because the file size was too big (5 mb). 
+  <br> **Solution:** I compressed the image to 270 ko by using [Compress JPEG](https://compressjpeg.com/). Now it loads faster (less than 200 ms).
 
-- To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." Found this solution on [Stack overflow](https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead). `border: none;` has been added to my iframe in CSS. 
+- To remove the error message from validator.w3.org "The frameborder attribute is not supported in HTML5. Use CSS instead." 
+<br> Found this solution on [Stack overflow](https://stackoverflow.com/questions/26274082/the-frameborder-attribute-on-the-iframe-element-is-obsolete-use-css-instead). `border: none;` has been added to my iframe in CSS. 
 
 - To remove the error message from validator.w3.org "The allowtransparency attribute on the iframe element is obsolete. Use CSS instead." Found this solution on [Stack overflow](https://stackoverflow.com/questions/3740700/there-is-no-attribute-allowtransparency). `background-color: transparent;` has been added to my iframe in CSS.
 
