@@ -1,5 +1,3 @@
-![The Monkees](assets/images/monkees.jpg)
-
 # The Monkees
 
 Milestone Project 1: User-Centric Frontend Development - Code Institute
