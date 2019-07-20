@@ -14,16 +14,10 @@ A live demo can be found [here](https://comanezz.github.io/the_monkees/index.htm
 
 #### User Stories:
 
-- As a new visitor, I want to see what the site shows
-- As a user I want to hear musics and read the lyrics
-- As a user I want to watch videos of The Monkees
-- As a user I want to book an event (party, weddings, christmas)
-- As a user I want to check out the tour dates
-- As a user I want to buy a ticket for a tour
-- As a user I want to see their Youtube page
-- As a user I want to see their Spotify page
-- As a user I want to see their Twitter page
-- As a user I want to see their Facebook page
+- As a new visitor, I want to discover the Monkees music
+- As a fan, I want to learn information about my favorite band (Date tour, New music, Videos)
+- As a client I want to buy a ticket for a tour or book a private event (party, weddings, christmas)
+- As a user I want to look at their social media (Youtube, Facebook, Twitter, etc...)
 
 #### This project is the best way to achieve these things because:
 
@@ -35,7 +29,7 @@ A live demo can be found [here](https://comanezz.github.io/the_monkees/index.htm
 
 - [Mobile view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/balsamic-mobile-monkees.pdf)
 - [Desktop view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/desktop-wireframe-monkees%20(1).pdf)
-  - **Notice:** Change of mind the market place page and the full background video (Home page) has not been included in the website.
+  - **Notice:** I changed my mind, I didn't include the market place page and the full background video (Home page) as I found that it was not relevant.
 
 ## Features
 
@@ -45,18 +39,18 @@ Each page has a footer with **Social Media Icons** linking to the social media p
 
 **Home**
 
-The Home page uses a carousel with 3 pictures switching automatically or can be switch manually. 
-There is no big title of the band's name on this page because we can clearly see written "The Monkees" on the logo and in the main pictures. 
+The "Home" page uses a carousel with 3 pictures switching automatically or can be switch manually. 
+I decided not to put a title with the band's name on this page because we can clearly see written "The Monkees" on the logo and in the main pictures. 
 
 Each rectangle includes an image and a title which redirect the user to another page of the website.
 
 **Videos**
 
-The Videos page features 3 embedded Youtube videos.
+The "Videos" page features 3 embedded Youtube videos from the Monkees's live shows or video clip.
 
 **Music**
 
-The Music page features:
+The "Music" page features:
  - 4 images cover
  - 3 Audio players
  - 3 lyrics buttons
@@ -67,12 +61,12 @@ The Music page features:
 
 **Tour**
 
-The Tour page features an image (representing the person who will perform in the next events) and the location and dates of the incoming events or previous events. 
+The "Tour" page features an image (representing the person who will perform in the next events) and the location and dates of the incoming events or previous events. 
 
 **Book an Event**
 
-The Book an Event page features a contact form requesting an email, type of event, date, location and additional information. 
-Bottom of the form there is a send button. 
+The "Book an Event" page features a contact form to enable client to make a request. The form require to fill informations such as email, type of event, date, location and additional information. 
+At the bottom of the form there is a "send" button to enable the client to confirm the request. 
 
 ### Features Left to Implement
 - I would like to make the form working. Being able to receive the information sent by the customer. 
@@ -99,21 +93,21 @@ Bottom of the form there is a send button.
 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation Service](https://validator.w3.org/) has been used to check the validity of the website code.
 
-- The website has been tested on several browsers (**Chrome, Safari, Firefox and Internet Explorer**). It has been tested by using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) to check the mobile view but also tested on a One Plus 5 and an Ipad.
+- The website has been tested on several browsers (**Chrome, Safari, Firefox and Internet Explorer**). It has been tested by using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) to check the mobile view but also tested on a OnePlus 5 mobile and an Ipad.
 
 - The website is fully responsive and behave as expected.
 
 - The logo (in the navbar) always leads back the user to the Home page.
 
-- Every links in the navbar redirect the user to the appropriate page.
+- Every link in the navbar redirect the user to the appropriate page.
 
-- Current page stays highlighted, the user will know which page he is in.
+- When we are on a page, related clickable link (menu) stays highlighted. This allows the user to know on which page he is.
 
-- All the links in the navbar behave correctly when hovering (change color and underline appears 'expect for the event button'). 
+- All the links in the navbar behave correctly when hovering (change color and underline appears, except for the event button). 
 
 - All the social icons in the footer behave correctly when hovering (change color and scale).
 
-- Social media links in the footer will open a new tab using target="_blank".  
+- All social media links in the footer will open a new tab using target="_blank".  
 
 ### Home page
 - The carousel image (Home page) switch images automatically or manually.
@@ -128,7 +122,7 @@ Bottom of the form there is a send button.
 
 - All embedded youtube videos work correctly.
 
-- All embedded youtube videos are responsize. Height and width increase or decrease correctly.
+- All embedded youtube videos are responsive. Height and width increase or decrease correctly.
 
 ### Music page
 
@@ -136,11 +130,11 @@ Bottom of the form there is a send button.
 
 - The audio players work correctly, each audio player plays their appropriate songs.
 
-- All lyrics pop up appears on the screen correctly when clicking on the lyrics button. 
+- All lyrics pop up on the screen correctly when clicking on the lyrics button. 
 
-- All lyrics pop up show their appropriate lyrics related to the song.
+- All lyrics pop up show the appropriate lyrics related to the song.
 
-- Spotify playlist works correctly. Not working if the user is located in India due to Spotify policy.
+- Spotify playlist works correctly. If the user is located in India, the spotify playlist is not working  due to their user policy.
 
 - Hovering all the lyrics buttons behave correctly.
 
@@ -152,14 +146,14 @@ Bottom of the form there is a send button.
 
 - Every location links redirect the user to the correct page by opening a new tab using target="_blank".
 
-- Every tickets buttons redirect the user to the correct page by opening a new tab using target="_blank".
+- Every ticket button redirect the user to the correct page by opening a new tab using target="_blank".
 
 - Hovering all the links and tickets buttons behave correctly.
 
 ### Book an Event page
 
 1. Contact form:
-    1. Go to the "Book an Event" page
+    1. Go to the "Book an Event" page.
     2. Try to submit the empty form and verify that an error message about the required fields appears.
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears.
     4. Try to submit the form with a valid email address but no input addressed to city and state and verify that an error message about the required fields appears.
