@@ -162,12 +162,17 @@ At the bottom of the form there is a "send" button to enable the client to confi
 ### Book an Event page
 
 1. Contact form:
-    1. Go to the "Book an Event" page.
+    1. Go to the **Book an Event** page.
     2. Try to submit the empty form and verify that an error message about the required fields appears.
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears.
-    4. Try to submit the form with a valid email address but no input addressed to city and state and verify that an error message about the required fields appears.
-    5. Try to submit the form with a valid email address and city but no input addressed to state and verify that an error message about the required fields appears.
-    6. Try to submit the form with all inputs valid and verify that no message appears.
+    3. Try to submit the form with all valid input except **email address** (left blank or invalid email address) and verify that a relevant error message appears.
+    4. Try to submit the form with all valid input except **type of event**  and verify that a relevant error message appears.
+    5. Try to submit the form with all valid input except **day** and verify that a relevant error message appears.
+    6. Try to submit the form with all valid input except **month** and verify that a relevant error message appears.
+    7. Try to submit the form with all valid input except **year** and verify that a relevant error message appears.
+    8. Try to submit the form with all valid input except **city** and verify that a relevant error message appears.
+    9. Try to submit the form with all valid input except **state** and verify that a relevant error message appears.
+    10. Try to submit the form with all valid input except **additional information** and verify that no error message appears because this input is not required.
+    11. Try to submit the form with all valid inputs and verify that no error message appears.
 
 ### Problems
 
