@@ -9,6 +9,9 @@ This website allows the Monkees's fans to get information from any device.
 ## **Demo**
 
 A live demo can be found [here](https://comanezz.github.io/the_monkees/index.html).
+<br>
+<br>
+<a href="https://comanezz.github.io/the_monkees/index.html" target="_blank"><img src="assets/images/home-page-monkees.png" alt="Home page Monkees"></a>
 
 ## UX
 
@@ -112,7 +115,7 @@ At the bottom of the form there is a "send" button to enable the client to confi
 
 - All the social icons in the footer behave correctly when hovering (change color and scale).
 
-- All social media links in the footer will open a new tab using target="_blank".  
+- All social media links in the footer will open a new tab using target="_blank" and redirect user to the correct page.  
 
 ### Home page
 - The carousel image (Home page) switch images automatically or manually.
