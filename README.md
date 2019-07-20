@@ -2,7 +2,9 @@
 
 Milestone Project 1: User-Centric Frontend Development - Code Institute
 
-This is a website for the fans of the famous rock band "The Monkees". It allows them to watch their videos, listen to their musics, check out their tour dates and the possibility to contact the band to perfom to their party (chrismas party, birthday or Wedding).
+This is a website for the fans of the famous rock band "The Monkees". It allows them to watch their videos, listen to their musics, check out their tour dates and give the possibility to book the band for a perfomance at their private party (chrismas party, birthday or Wedding).
+
+This website allows the Monkees's fans to get information from any device.
 
 ## **Demo**
 
@@ -14,21 +16,23 @@ A live demo can be found [here](https://comanezz.github.io/the_monkees/index.htm
 
 #### User Stories:
 
-- As a new visitor, I want to discover the Monkees music
-- As a fan, I want to learn information about my favorite band (Date tour, New music, Videos)
-- As a client I want to buy a ticket for a tour or book a private event (party, weddings, christmas)
-- As a user I want to look at their social media (Youtube, Facebook, Twitter, etc...)
+- As a new visitor, I want to discover the Monkees's music because I love music and discovering.
+- As a fan, I want to get informations about my favorite band (Date tour, New music, Videos) because I want to stay updated with the latest news and I would love to meet them.
+- As a music lover, I want to buy a tour ticket because I love going to music shows.
+- As a fan or corporate event planner, I want to book the band for a private event (party, weddings, christmas) because I want to make that day special.
 
 #### This project is the best way to achieve these things because:
 
 - This website is easy to navigate.
 - There is no overloading information.
+- All different information can be found easily.
+- It works well on every device.
 - All the links redirect the user to the correct page.
 
 ##### Wireframes
 
 - [Mobile view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/balsamic-mobile-monkees.pdf)
-- [Desktop view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/desktop-wireframe-monkees%20(1).pdf)
+- [Desktop view](https://github.com/comanezz/the_monkees/blob/master/assets/wireframe/balsamic-desktop-monkees.pdf)
   - **Notice:** I changed my mind, I didn't include the market place page and the full background video (Home page) as I found that it was not relevant.
 
 ## Features
@@ -69,7 +73,7 @@ The "Book an Event" page features a contact form to enable client to make a requ
 At the bottom of the form there is a "send" button to enable the client to confirm the request. 
 
 ### Features Left to Implement
-- I would like to make the form working. Being able to receive the information sent by the customer. 
+- "Book an Event" contact form: This feature already exist but I would like to be able to receive the information sent by the customer - I haven't learn how to do that yet. 
 
 ## Technologies Used
 
@@ -95,6 +99,7 @@ At the bottom of the form there is a "send" button to enable the client to confi
 
 - The website has been tested on several browsers (**Chrome, Safari, Firefox and Internet Explorer**). It has been tested by using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) to check the mobile view but also tested on a OnePlus 5 mobile and an Ipad.
 
+### All pages (Home, Videos, Music, Tour, Book an Event)
 - The website is fully responsive and behave as expected.
 
 - The logo (in the navbar) always leads back the user to the Home page.
@@ -211,5 +216,6 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 - I received inspiration for this project from:
   - [ACDC](https://www.acdc.com/) for the Home page layout and [Rolling Stones](https://www.rollingstones.com/live/) for the underline hover in the Navbar. 
+- For the "README" section, I followed the example of some of the [sample project](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive) and tips given from **AJGreaves** (Code Institute Student). 
 
 **This is for educational use.**
