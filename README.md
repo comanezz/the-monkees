@@ -11,7 +11,7 @@ This website allows the Monkees's fans to get information from any device.
 A live demo can be found [here](https://comanezz.github.io/the_monkees/index.html).
 <br>
 <br>
-<a href="https://comanezz.github.io/the_monkees/index.html" target="_blank"><img src="assets/images/home-page-monkees.png" alt="Home page Monkees"></a>
+<a href="https://comanezz.github.io/the_monkees/index.html" target="_blank"><img src="assets/images/home-page-monkees.png" alt="Home page Monkees" style="width: 80%;"></a>
 
 ## UX
 
