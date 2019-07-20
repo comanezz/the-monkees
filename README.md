@@ -77,6 +77,7 @@ At the bottom of the form there is a "send" button to enable the client to confi
 
 ### Features Left to Implement
 - "Book an Event" contact form: This feature already exist but I would like to be able to receive the information sent by the customer - I haven't learn how to do that yet. 
+- "Book an Event" contact form: I would like to disable the possibility of sending a booking request when the dates are not available (date from the past or already booked).
 
 ## Technologies Used
 
